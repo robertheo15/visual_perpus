@@ -25,6 +25,12 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
@@ -37,6 +43,5 @@
         <Button Content="LOGOUT" Grid.Column="7" Grid.Row="1" Height="100" Width="100" Margin="15,0,0,0" />
         <Line Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="10" Stroke="Black" StrokeThickness="10"></Line>
         <Label Content="PERPUSTAKAAN UNIVERSITAS" Grid.Column="4"  Grid.Row="5" VerticalAlignment="Center" Grid.ColumnSpan="4" Height="56" Width="410" TextBlock.FontSize="30" TextBlock.TextAlignment="Center" HorizontalAlignment="Right"/>
-        <Label Content="Halaman Utama" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2"></Label>
     </Grid>
 </Window>

@@ -17,3 +17,24 @@ C:\Users\User\Downloads\Visual Project\perpusVisual\obj\Debug\netcoreapp3.1\perp
 C:\Users\User\Downloads\Visual Project\perpusVisual\obj\Debug\netcoreapp3.1\perpusVisual.dll
 C:\Users\User\Downloads\Visual Project\perpusVisual\obj\Debug\netcoreapp3.1\perpusVisual.pdb
 C:\Users\User\Downloads\Visual Project\perpusVisual\obj\Debug\netcoreapp3.1\perpusVisual.genruntimeconfig.cache
+D:\TA sem 4 Visual\visual_perpus\Visual Project\perpusVisual\obj\Debug\netcoreapp3.1\perpusVisual.csprojAssemblyReference.cache
+D:\TA sem 4 Visual\visual_perpus\Visual Project\perpusVisual\obj\Debug\netcoreapp3.1\adminPeminjaman.g.cs
+D:\TA sem 4 Visual\visual_perpus\Visual Project\perpusVisual\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+D:\TA sem 4 Visual\visual_perpus\Visual Project\perpusVisual\obj\Debug\netcoreapp3.1\App.g.cs
+D:\TA sem 4 Visual\visual_perpus\Visual Project\perpusVisual\obj\Debug\netcoreapp3.1\perpusVisual_MarkupCompile.cache
+D:\TA sem 4 Visual\visual_perpus\Visual Project\perpusVisual\obj\Debug\netcoreapp3.1\perpusVisual_MarkupCompile.lref
+D:\TA sem 4 Visual\visual_perpus\Visual Project\perpusVisual\obj\Debug\netcoreapp3.1\perpusVisual.dll
+D:\TA sem 4 Visual\visual_perpus\Visual Project\perpusVisual\obj\Debug\netcoreapp3.1\perpusVisual.pdb
+D:\TA sem 4 Visual\visual_perpus\Visual Project\perpusVisual\bin\Debug\netcoreapp3.1\perpusVisual.exe
+D:\TA sem 4 Visual\visual_perpus\Visual Project\perpusVisual\bin\Debug\netcoreapp3.1\perpusVisual.deps.json
+D:\TA sem 4 Visual\visual_perpus\Visual Project\perpusVisual\bin\Debug\netcoreapp3.1\perpusVisual.runtimeconfig.json
+D:\TA sem 4 Visual\visual_perpus\Visual Project\perpusVisual\bin\Debug\netcoreapp3.1\perpusVisual.runtimeconfig.dev.json
+D:\TA sem 4 Visual\visual_perpus\Visual Project\perpusVisual\bin\Debug\netcoreapp3.1\perpusVisual.dll
+D:\TA sem 4 Visual\visual_perpus\Visual Project\perpusVisual\bin\Debug\netcoreapp3.1\perpusVisual.pdb
+D:\TA sem 4 Visual\visual_perpus\Visual Project\perpusVisual\obj\Debug\netcoreapp3.1\adminPeminjaman.baml
+D:\TA sem 4 Visual\visual_perpus\Visual Project\perpusVisual\obj\Debug\netcoreapp3.1\MainWindow.baml
+D:\TA sem 4 Visual\visual_perpus\Visual Project\perpusVisual\obj\Debug\netcoreapp3.1\perpusVisual.g.resources
+D:\TA sem 4 Visual\visual_perpus\Visual Project\perpusVisual\obj\Debug\netcoreapp3.1\perpusVisual.AssemblyInfoInputs.cache
+D:\TA sem 4 Visual\visual_perpus\Visual Project\perpusVisual\obj\Debug\netcoreapp3.1\perpusVisual.AssemblyInfo.cs
+D:\TA sem 4 Visual\visual_perpus\Visual Project\perpusVisual\obj\Debug\netcoreapp3.1\perpusVisual.csproj.CoreCompileInputs.cache
+D:\TA sem 4 Visual\visual_perpus\Visual Project\perpusVisual\obj\Debug\netcoreapp3.1\perpusVisual.genruntimeconfig.cache

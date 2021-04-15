@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\User\Downloads\Visual Project\perpusVisual\obj\Debug\netcoreapp3.1\
+D:\TA sem 4 Visual\visual_perpus\Visual Project\perpusVisual\obj\Debug\netcoreapp3.1\
 perpusVisual
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
-C:\Users\User\Downloads\Visual Project\perpusVisual\App.xaml
-11151548125
+D:\TA sem 4 Visual\visual_perpus\Visual Project\perpusVisual\App.xaml
+14525752552
 
-51900622110
-1921654412462
-MainWindow.xaml;
+18456731797
+192-1533232326
+adminDataBuku.xaml;adminDataMember.xaml;adminDataPinjam.xaml;adminLaporan.xaml;adminLogin.xaml;adminPeminjaman.xaml;adminPengembalian.xaml;adminTambahBuku.xaml;adminTambahMember.xaml;MainWindow.xaml;selfDataBuku.xaml;selfMainWindows.xaml;selfPeminjaman.xaml;selfPengembalian.xaml;
 
-False
+True
 
