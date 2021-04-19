@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "GUjxaQIsjkm1Nwgice+cNHhX34vO4zBVzpwgKhOfoLpIhG1BRurHWe1mSbD3zziR64+JF6T422v8XbduXKdEkw==",
+  "dgSpecHash": "gALFwaRiJ8THoG9wI4xQehAyyj196WYwXq1j6XcHytRg6BJm+/u2YducAti+WUc106IzYmlFShvpI7Do+M3Qyw==",
   "success": true,
   "projectFilePath": "D:\\TA sem 4 Visual\\visual_perpus\\Visual Project\\perpusVisual\\perpusVisual.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+  ],
   "logs": []
 }

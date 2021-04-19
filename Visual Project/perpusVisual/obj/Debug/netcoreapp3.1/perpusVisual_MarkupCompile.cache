@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 D:\TA sem 4 Visual\visual_perpus\Visual Project\perpusVisual\App.xaml
-2-725751506
+14525752552
 
-4-161010505
+16126182042
 192-1533232326
-adminPeminjaman.xaml;MainWindow.xaml;
+adminDataBuku.xaml;adminDataMember.xaml;adminDataPinjam.xaml;adminLaporan.xaml;adminLogin.xaml;adminPeminjaman.xaml;adminPengembalian.xaml;adminTambahBuku.xaml;adminTambahMember.xaml;MainWindow.xaml;selfDataBuku.xaml;selfMainWindows.xaml;selfPeminjaman.xaml;selfPengembalian.xaml;
 
 False
 
