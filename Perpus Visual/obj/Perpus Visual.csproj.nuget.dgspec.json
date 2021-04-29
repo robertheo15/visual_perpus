@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Downloads\\Perpus Visual\\Perpus Visual.csproj": {}
+    "C:\\Users\\User\\Documents\\GitHub\\visual_perpus\\Perpus Visual\\Perpus Visual.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Downloads\\Perpus Visual\\Perpus Visual.csproj": {
+    "C:\\Users\\User\\Documents\\GitHub\\visual_perpus\\Perpus Visual\\Perpus Visual.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Downloads\\Perpus Visual\\Perpus Visual.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\visual_perpus\\Perpus Visual\\Perpus Visual.csproj",
         "projectName": "Perpus Visual",
-        "projectPath": "C:\\Users\\User\\Downloads\\Perpus Visual\\Perpus Visual.csproj",
+        "projectPath": "C:\\Users\\User\\Documents\\GitHub\\visual_perpus\\Perpus Visual\\Perpus Visual.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Downloads\\Perpus Visual\\obj\\",
+        "outputPath": "C:\\Users\\User\\Documents\\GitHub\\visual_perpus\\Perpus Visual\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
