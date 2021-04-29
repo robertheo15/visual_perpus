@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="admin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="views\DataBukuAdmin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="views\DataBukuView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="views\DataMemberAdmin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="views\DataPinjamAdmin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="views\laporan.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="views\LoginView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="views\PeminjamanView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="views\PengembalianView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="admin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="views\DataBukuAdmin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="views\DataBukuView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="views\DataMemberAdmin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="views\DataPinjamAdmin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="views\laporan.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="views\LoginView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="views\PeminjamanView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="views\PengembalianView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
