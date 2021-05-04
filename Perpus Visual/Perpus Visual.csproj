@@ -9,10 +9,8 @@
 
   <ItemGroup>
     <PackageReference Include="MaterialDesignThemes" Version="4.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="models\" />
+    <PackageReference Include="MySql.Data" Version="8.0.24" />
+    <PackageReference Include="MySqlConnector" Version="1.3.7" />
   </ItemGroup>
 
 </Project>
