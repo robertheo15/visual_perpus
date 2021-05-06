@@ -1,4 +1,5 @@
-﻿using Perpus_Visual.viewModels;
+﻿using Perpus_Visual.models;
+using Perpus_Visual.viewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,9 +22,13 @@ namespace Perpus_Visual
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Database db;
+
         public MainWindow()
         {
             InitializeComponent();
+            db = new Database();
+            db.Insert();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

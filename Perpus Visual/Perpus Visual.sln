@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.31005.135
+VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Perpus Visual", "Perpus Visual.csproj", "{ACFF7C18-1AD3-4206-B5CF-D5BCEE67AEF5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Perpus Visual", "Perpus Visual.csproj", "{0C4968BF-01E3-49C2-9BFE-EFAAEAAC7C85}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{ACFF7C18-1AD3-4206-B5CF-D5BCEE67AEF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ACFF7C18-1AD3-4206-B5CF-D5BCEE67AEF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ACFF7C18-1AD3-4206-B5CF-D5BCEE67AEF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ACFF7C18-1AD3-4206-B5CF-D5BCEE67AEF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C4968BF-01E3-49C2-9BFE-EFAAEAAC7C85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C4968BF-01E3-49C2-9BFE-EFAAEAAC7C85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C4968BF-01E3-49C2-9BFE-EFAAEAAC7C85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C4968BF-01E3-49C2-9BFE-EFAAEAAC7C85}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {1A2D6730-2A03-487D-8C69-F7301C5B3CC2}
+		SolutionGuid = {038E29FA-53E8-4947-BC89-D34319812806}
 	EndGlobalSection
 EndGlobal
