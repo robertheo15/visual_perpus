@@ -104,11 +104,13 @@ namespace Perpus_Visual.models
             if (this.OpenConnection() == true)
             {
                 //create mysql command
-                MySqlCommand cmd = new MySqlCommand();
-                //Assign the query using CommandText
-                cmd.CommandText = query;
-                //Assign the connection using Connection
-                cmd.Connection = connection;
+                MySqlCommand cmd = new MySqlCommand
+                {
+                    //Assign the query using CommandText
+                    CommandText = query,
+                    //Assign the connection using Connection
+                    Connection = connection
+                };
 
                 //Execute query
                 cmd.ExecuteNonQuery();
@@ -220,13 +222,15 @@ namespace Perpus_Visual.models
                 StreamWriter file = new StreamWriter(path);
 
 
-                ProcessStartInfo psi = new ProcessStartInfo();
-                psi.FileName = "mysqldump";
-                psi.RedirectStandardInput = false;
-                psi.RedirectStandardOutput = true;
-                psi.Arguments = string.Format(@"-u{0} -p{1} -h{2} {3}",
-                    uid, password, server, database);
-                psi.UseShellExecute = false;
+                ProcessStartInfo psi = new ProcessStartInfo
+                {
+                    FileName = "mysqldump",
+                    RedirectStandardInput = false,
+                    RedirectStandardOutput = true,
+                    Arguments = string.Format(@"-u{0} -p{1} -h{2} {3}",
+                    uid, password, server, database),
+                    UseShellExecute = false
+                };
 
                 Process process = Process.Start(psi);
 
@@ -239,7 +243,7 @@ namespace Perpus_Visual.models
             }
             catch (IOException ex)
             {
-                MessageBox.Show("Error , unable to backup!");
+                MessageBox.Show("Error , unable to backup!"+ ex);
             }
         }
 
@@ -255,13 +259,15 @@ namespace Perpus_Visual.models
                 string input = file.ReadToEnd();
                 file.Close();
 
-                ProcessStartInfo psi = new ProcessStartInfo();
-                psi.FileName = "mysql";
-                psi.RedirectStandardInput = true;
-                psi.RedirectStandardOutput = false;
-                psi.Arguments = string.Format(@"-u{0} -p{1} -h{2} {3}",
-                    uid, password, server, database);
-                psi.UseShellExecute = false;
+                ProcessStartInfo psi = new ProcessStartInfo
+                {
+                    FileName = "mysql",
+                    RedirectStandardInput = true,
+                    RedirectStandardOutput = false,
+                    Arguments = string.Format(@"-u{0} -p{1} -h{2} {3}",
+                    uid, password, server, database),
+                    UseShellExecute = false
+                };
 
 
                 Process process = Process.Start(psi);
@@ -272,7 +278,7 @@ namespace Perpus_Visual.models
             }
             catch (IOException ex)
             {
-                MessageBox.Show("Error , unable to Restore!");
+                MessageBox.Show("Error , unable to Restore!" +ex);
             }
         }
     }

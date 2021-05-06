@@ -29,5 +29,11 @@ namespace Perpus_Visual.views
             admin.Show();
 
         }
+
+        private void TextBoxLogin(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
     }
 }
