@@ -23,7 +23,7 @@ namespace Perpus_Visual.views
             InitializeComponent();
         }
 
-        private void login(object sender, RoutedEventArgs e)
+        private void Login(object sender, RoutedEventArgs e)
         {
             admin admin = new admin();
             admin.Show();
