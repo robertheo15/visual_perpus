@@ -22,6 +22,17 @@ namespace Perpus_Visual.views
         public addMember()
         {
             InitializeComponent();
+
+        }
+
+        private void TextBox_Nim(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

@@ -34,7 +34,7 @@
         </Grid.RowDefinitions>
         <Label Content="TAMBAH MEMBER" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" VerticalContentAlignment="Center" HorizontalAlignment="Center" FontSize="30"></Label>
         <Label Content="NIM : " Grid.Column="1" Grid.Row="2" Margin="0,15,0,0"></Label>
-        <TextBox Grid.Row="2" Grid.Column="2" Width="340" Margin="0,15,0,0"></TextBox>
+        <TextBox Text="{Binding Nim}" Grid.Row="2" Grid.Column="2" Width="340" Margin="0,15,0,0" TextChanged="TextBox_Nim"></TextBox>
         <Label Content="NAMA : " Grid.Column="1" Grid.Row="3" Margin="0,15,0,0"></Label>
         <TextBox Grid.Row="3" Grid.Column="2" Width="340" Margin="0,15,0,0"></TextBox>
         <Label Content="JURUSAN : " Grid.Column="1" Grid.Row="4" Margin="0,15,0,0"></Label>
@@ -46,6 +46,6 @@
         <Label Content="TGL LAHIR : " Grid.Column="1" Grid.Row="7" Margin="0,15,0,0"></Label>
         <TextBox Grid.Row="7" Grid.Column="2" Width="340" Margin="0,15,0,0"></TextBox>
 
-        <Button Content="TAMBAHKAN" Grid.Column="1" Grid.Row="10" HorizontalAlignment="Center" Grid.ColumnSpan="2" Margin="0,15,0,0" Width="200"></Button>
+        <Button Content="TAMBAHKAN" Grid.Column="1" Grid.Row="10" HorizontalAlignment="Center" Grid.ColumnSpan="2" Margin="0,15,0,0" Width="200" Click="Button_Click"></Button>
     </Grid>
 </Window>
