@@ -43,7 +43,16 @@
         <Button Content="Cari" Grid.Column="7" Grid.Row="3" Margin="10,10,0,0" Height="50" Width="100"></Button>
         <Button Content="TAMBAH" Grid.Column="9" Grid.Row="3" Margin="10,10,0,0" Height="50" Width="100"></Button>
         <Button Content="HAPUS" Grid.Column="10" Grid.Row="3" Margin="10,10,0,0" Height="50" Width="100"></Button>
-        <DataGrid Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="10" Margin="10,23,41,22" Grid.RowSpan="9"/>
+        <DataGrid Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="10" Margin="10,23,41,22" Grid.RowSpan="9">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="First Name"/>
+                <DataGridTextColumn Header="First Name"/>
+                <DataGridHyperlinkColumn Header="Email"/>
+                <DataGridCheckBoxColumn Header="Member?"/>
+                <DataGridComboBoxColumn Header="Order Status" />
+            </DataGrid.Columns>
+            
+        </DataGrid>
 
     </Grid>
 </UserControl>

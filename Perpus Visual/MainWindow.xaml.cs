@@ -27,8 +27,8 @@ namespace Perpus_Visual
         public MainWindow()
         {
             InitializeComponent();
-            db = new Database();
-            db.Insert();
+         //   db = new Database();
+           // db.Insert();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
