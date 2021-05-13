@@ -68,6 +68,12 @@
     <Compile Include="viewModels\Login.cs" />
     <Compile Include="viewModels\Peminjaman.cs" />
     <Compile Include="viewModels\Pengembalian.cs" />
+    <Compile Include="views\addBook.xaml.cs">
+      <DependentUpon>addBook.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\addMember.xaml.cs">
+      <DependentUpon>addMember.xaml</DependentUpon>
+    </Compile>
     <Compile Include="views\DataBukuAdmin.xaml.cs">
       <DependentUpon>DataBukuAdmin.xaml</DependentUpon>
     </Compile>
@@ -108,6 +114,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="views\addBook.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\addMember.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="views\DataBukuAdmin.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

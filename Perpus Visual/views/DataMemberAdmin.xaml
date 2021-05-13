@@ -40,7 +40,7 @@
         <Label Content="DATA MEMBER" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" FontSize="40"></Label>
         <TextBox Grid.Column="4"  Grid.Row="1" Grid.ColumnSpan="4"  TextWrapping="Wrap" Width="500" BorderThickness="4" Height="50" Margin="10,10,0,0"/>
         <Button Content="Cari" Grid.Column="8" Grid.Row="1" Margin="10,10,0,0" Height="50" Width="100"></Button>
-        <Button Content="TAMBAH" Grid.Column="9" Grid.Row="1" Margin="10,10,0,0" Height="50" Width="100"></Button>
+        <Button Content="TAMBAH" Grid.Column="9" Grid.Row="1" Margin="10,10,0,0" Height="50" Width="100" x:Name="addMember" Click="addMember_Click"></Button>
         <Button Content="HAPUS" Grid.Column="10" Grid.Row="1" Margin="10,10,0,0" Height="50" Width="100"></Button>
         <DataGrid Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="10" Margin="10,23,41,22" Grid.RowSpan="9"/>
 
