@@ -17,11 +17,16 @@ namespace Perpus_Visual.views
     /// <summary>
     /// Interaction logic for addBook.xaml
     /// </summary>
-    public partial class addBook : Window
+    public partial class AddBook : Window
     {
-        public addBook()
+        public AddBook()
         {
             InitializeComponent();
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

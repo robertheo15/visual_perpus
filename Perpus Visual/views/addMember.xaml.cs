@@ -25,14 +25,24 @@ namespace Perpus_Visual.views
 
         }
 
-        private void TextBox_Nim(object sender, TextChangedEventArgs e)
+        private void TextBoxNim_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void BtnAddMember_Click(object sender, RoutedEventArgs e)
         {
             
+        }
+
+        private void TextBoxName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TextBoxMajor_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

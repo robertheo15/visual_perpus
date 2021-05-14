@@ -25,7 +25,7 @@ namespace Perpus_Visual.views
 
         private void addBook_Click(object sender, RoutedEventArgs e)
         {
-            addBook book = new addBook();
+            AddBook book = new AddBook();
             book.Show();
         }
     }

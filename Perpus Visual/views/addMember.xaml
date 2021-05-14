@@ -34,18 +34,16 @@
         </Grid.RowDefinitions>
         <Label Content="TAMBAH MEMBER" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" VerticalContentAlignment="Center" HorizontalAlignment="Center" FontSize="30"></Label>
         <Label Content="NIM : " Grid.Column="1" Grid.Row="2" Margin="0,15,0,0"></Label>
-        <TextBox Text="{Binding Nim}" Grid.Row="2" Grid.Column="2" Width="340" Margin="0,15,0,0" TextChanged="TextBox_Nim"></TextBox>
+        <TextBox x:Name="TextBoxNim" Text="{Binding Nim}" Grid.Row="2" Grid.Column="2" Width="340" Margin="0,15,0,0" TextChanged="TextBoxNim_TextChanged"></TextBox>
         <Label Content="NAMA : " Grid.Column="1" Grid.Row="3" Margin="0,15,0,0"></Label>
-        <TextBox Grid.Row="3" Grid.Column="2" Width="340" Margin="0,15,0,0"></TextBox>
+        <TextBox x:Name="TextboxName" Grid.Row="3" Grid.Column="2" Width="340" Margin="0,15,0,0" TextChanged="TextBoxName_TextChanged"></TextBox>
         <Label Content="JURUSAN : " Grid.Column="1" Grid.Row="4" Margin="0,15,0,0"></Label>
-        <TextBox Grid.Row="4" Grid.Column="2" Width="340" Margin="0,15,0,0"></TextBox>
+        <TextBox x:Name="TextBoxMajor" Grid.Row="4" Grid.Column="2" Width="340" Margin="0,15,0,0" TextChanged="TextBoxMajor_TextChanged"></TextBox>
         <Label Content="ANGKATAN : " Grid.Column="1" Grid.Row="5" Margin="0,15,0,0"></Label>
-        <TextBox Grid.Row="5" Grid.Column="2" Width="340" Margin="0,15,0,0"></TextBox>
-        <Label Content="ALAMAT : " Grid.Column="1" Grid.Row="6" Margin="0,15,0,0"></Label>
-        <TextBox Grid.Row="6" Grid.Column="2" Width="340" Margin="0,15,0,0"></TextBox>
+        <TextBox x:Name="TextBoxYear" Grid.Row="5" Grid.Column="2" Width="340" Margin="0,15,0,0"></TextBox>
         <Label Content="TGL LAHIR : " Grid.Column="1" Grid.Row="7" Margin="0,15,0,0"></Label>
-        <TextBox Grid.Row="7" Grid.Column="2" Width="340" Margin="0,15,0,0"></TextBox>
-
-        <Button Content="TAMBAHKAN" Grid.Column="1" Grid.Row="10" HorizontalAlignment="Center" Grid.ColumnSpan="2" Margin="0,15,0,0" Width="200" Click="Button_Click"></Button>
+        <DatePicker Grid.Row="7" Grid.Column="2" HorizontalAlignment="Left" Margin="0,15,15,0" VerticalAlignment="Top" Width="250"/>
+        <Button x:Name="BtnAddMember" Content="TAMBAHKAN" Grid.Column="1" Grid.Row="10" HorizontalAlignment="Center" Grid.ColumnSpan="2" Margin="0,15,0,0" Width="200" Click="BtnAddMember_Click"></Button>
+        
     </Grid>
 </Window>
