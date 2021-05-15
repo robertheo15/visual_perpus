@@ -1,7 +1,7 @@
 ﻿
 namespace Visual_Perpus
 {
-    partial class Databukumember
+    partial class dataBukuMember
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Visual_Perpus
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Databukumember));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dataBukuMember));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();

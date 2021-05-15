@@ -1,7 +1,7 @@
 ﻿
 namespace Visual_Perpus
 {
-    partial class Datamember
+    partial class dataMember
     {
         /// <summary>
         /// Required designer variable.
@@ -29,11 +29,11 @@ namespace Visual_Perpus
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Datamember));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dataMember));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.addMember = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -66,31 +66,30 @@ namespace Visual_Perpus
             this.bunifuThinButton23.TabIndex = 27;
             this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // addMember
+            // bunifuThinButton22
             // 
-            this.addMember.ActiveBorderThickness = 1;
-            this.addMember.ActiveCornerRadius = 20;
-            this.addMember.ActiveFillColor = System.Drawing.Color.SpringGreen;
-            this.addMember.ActiveForecolor = System.Drawing.Color.White;
-            this.addMember.ActiveLineColor = System.Drawing.Color.SpringGreen;
-            this.addMember.BackColor = System.Drawing.Color.White;
-            this.addMember.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("addMember.BackgroundImage")));
-            this.addMember.ButtonText = "TAMBAH";
-            this.addMember.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addMember.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addMember.ForeColor = System.Drawing.Color.Black;
-            this.addMember.IdleBorderThickness = 1;
-            this.addMember.IdleCornerRadius = 20;
-            this.addMember.IdleFillColor = System.Drawing.Color.White;
-            this.addMember.IdleForecolor = System.Drawing.Color.SpringGreen;
-            this.addMember.IdleLineColor = System.Drawing.Color.SpringGreen;
-            this.addMember.Location = new System.Drawing.Point(699, 112);
-            this.addMember.Margin = new System.Windows.Forms.Padding(5);
-            this.addMember.Name = "addMember";
-            this.addMember.Size = new System.Drawing.Size(132, 41);
-            this.addMember.TabIndex = 26;
-            this.addMember.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.addMember.Click += new System.EventHandler(this.addMember_Click);
+            this.bunifuThinButton22.ActiveBorderThickness = 1;
+            this.bunifuThinButton22.ActiveCornerRadius = 20;
+            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.SpringGreen;
+            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.SpringGreen;
+            this.bunifuThinButton22.BackColor = System.Drawing.Color.White;
+            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
+            this.bunifuThinButton22.ButtonText = "TAMBAH";
+            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton22.ForeColor = System.Drawing.Color.Black;
+            this.bunifuThinButton22.IdleBorderThickness = 1;
+            this.bunifuThinButton22.IdleCornerRadius = 20;
+            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.SpringGreen;
+            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.SpringGreen;
+            this.bunifuThinButton22.Location = new System.Drawing.Point(699, 112);
+            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton22.Name = "bunifuThinButton22";
+            this.bunifuThinButton22.Size = new System.Drawing.Size(132, 41);
+            this.bunifuThinButton22.TabIndex = 26;
+            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bunifuCustomDataGrid1
             // 
@@ -184,7 +183,7 @@ namespace Visual_Perpus
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1194, 723);
             this.Controls.Add(this.bunifuThinButton23);
-            this.Controls.Add(this.addMember);
+            this.Controls.Add(this.bunifuThinButton22);
             this.Controls.Add(this.bunifuCustomDataGrid1);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.bunifuMaterialTextbox1);
@@ -200,7 +199,7 @@ namespace Visual_Perpus
         #endregion
 
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
-        private Bunifu.Framework.UI.BunifuThinButton2 addMember;
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;

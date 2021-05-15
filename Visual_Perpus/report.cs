@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Visual_Perpus
 {
-    public partial class Report : Form
+    public partial class report : Form
     {
-        public Report()
+        public report()
         {
             InitializeComponent();
         }

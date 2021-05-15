@@ -1,7 +1,7 @@
 ﻿
 namespace Visual_Perpus
 {
-    partial class Admin
+    partial class admin
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Visual_Perpus
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(admin));
             this.bunifuFlatButton10 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton17 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton18 = new Bunifu.Framework.UI.BunifuFlatButton();

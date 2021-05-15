@@ -1,7 +1,7 @@
 ﻿
 namespace Visual_Perpus
 {
-    partial class Databukuadmin
+    partial class dataBukuAdmin
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@ namespace Visual_Perpus
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Databukuadmin));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dataBukuAdmin));
             this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -150,6 +150,7 @@ namespace Visual_Perpus
             this.bunifuThinButton22.Size = new System.Drawing.Size(132, 41);
             this.bunifuThinButton22.TabIndex = 20;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
             // 
             // bunifuThinButton23
             // 

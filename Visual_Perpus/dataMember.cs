@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Visual_Perpus
 {
-    public partial class Datamember : Form
+    public partial class dataMember : Form
     {
-        public Datamember()
+        public dataMember()
         {
             InitializeComponent();
-        }
-
-        private void addMember_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

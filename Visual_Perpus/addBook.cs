@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Visual_Perpus
 {
-    public partial class pengembalian : Form
+    public partial class addBook : Form
     {
-        public pengembalian()
+        public addBook()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

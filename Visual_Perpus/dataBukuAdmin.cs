@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace Visual_Perpus
 {
-    public partial class Databukuadmin : Form
+    public partial class dataBukuAdmin : Form
     {
-        public Databukuadmin()
+        public dataBukuAdmin()
         {
             InitializeComponent();
+        }
+
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+            addBook tbh = new addBook();
+            tbh.ShowDialog();
         }
     }
 }

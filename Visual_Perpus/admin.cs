@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Visual_Perpus
 {
-    public partial class Admin : Form
+    public partial class admin : Form
     {
-        public Admin()
+        public admin()
         {
             InitializeComponent();
         }
@@ -25,7 +25,7 @@ namespace Visual_Perpus
         private void btnPeminjaman_Click(object sender, EventArgs e)
         {
             panel2.Controls.Clear();
-            Peminjaman pinjam = new Peminjaman();
+            peminjaman pinjam = new peminjaman();
             pinjam.TopLevel = false;
             pinjam.Show();
             panel2.Controls.Add(pinjam);
@@ -36,7 +36,7 @@ namespace Visual_Perpus
         private void bunifuFlatButton18_Click(object sender, EventArgs e)
         {
             panel2.Controls.Clear();
-            Pengembalian kembali = new Pengembalian();
+            pengembalian kembali = new pengembalian();
             kembali.TopLevel = false;
             kembali.Show();
             panel2.Controls.Add(kembali);
@@ -47,7 +47,7 @@ namespace Visual_Perpus
         private void bunifuFlatButton17_Click(object sender, EventArgs e)
         {
             panel2.Controls.Clear();
-            Databukuadmin datbuk = new Databukuadmin();
+            dataBukuAdmin datbuk = new dataBukuAdmin();
             datbuk.TopLevel = false;
             datbuk.Show();
             panel2.Controls.Add(datbuk);
@@ -58,7 +58,7 @@ namespace Visual_Perpus
         private void bunifuFlatButton10_Click(object sender, EventArgs e)
         {
             panel2.Controls.Clear();
-            Datamember datamember = new Datamember();
+            dataMember datamember = new dataMember();
             datamember.TopLevel = false;
             datamember.Show();
             panel2.Controls.Add(datamember);
@@ -69,7 +69,7 @@ namespace Visual_Perpus
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
             panel2.Controls.Clear();
-            Datapinjam dataPinjam = new Datapinjam();
+            dataPinjam dataPinjam = new dataPinjam();
             dataPinjam.TopLevel = false;
             dataPinjam.Show();
             panel2.Controls.Add(dataPinjam);
@@ -80,7 +80,7 @@ namespace Visual_Perpus
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
             panel2.Controls.Clear();
-            Report report = new Report();
+            report report = new report();
             report.TopLevel = false;
             report.Show();
             panel2.Controls.Add(report);

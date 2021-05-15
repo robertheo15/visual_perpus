@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Visual_Perpus
 {
-    public partial class Datapinjam : Form
+    public partial class dataPinjam : Form
     {
-        public Datapinjam()
+        public dataPinjam()
         {
             InitializeComponent();
         }
