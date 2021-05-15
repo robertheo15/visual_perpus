@@ -51,17 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="Admin.cs">
-=======
-    <Compile Include="addBook.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="addBook.Designer.cs">
-      <DependentUpon>addBook.cs</DependentUpon>
-    </Compile>
-    <Compile Include="admin.cs">
->>>>>>> bac8d315b3019386944134e6151156459db356c1
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Admin.Designer.cs">
@@ -124,7 +114,6 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="Report.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,13 +122,6 @@
     </Compile>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
-=======
-    <EmbeddedResource Include="addBook.resx">
-      <DependentUpon>addBook.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="admin.resx">
-      <DependentUpon>admin.cs</DependentUpon>
->>>>>>> bac8d315b3019386944134e6151156459db356c1
     </EmbeddedResource>
     <EmbeddedResource Include="Databukuadmin.resx">
       <DependentUpon>Databukuadmin.cs</DependentUpon>
