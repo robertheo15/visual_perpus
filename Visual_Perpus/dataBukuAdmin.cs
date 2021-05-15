@@ -16,11 +16,5 @@ namespace Visual_Perpus
         {
             InitializeComponent();
         }
-
-        private void bunifuThinButton22_Click(object sender, EventArgs e)
-        {
-            addBook tbh = new addBook();
-            tbh.ShowDialog();
-        }
     }
 }
