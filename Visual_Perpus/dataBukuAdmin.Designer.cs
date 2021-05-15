@@ -36,7 +36,7 @@ namespace Visual_Perpus
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label2 = new System.Windows.Forms.Label();
-            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.BtnAddBook = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.SuspendLayout();
@@ -126,31 +126,31 @@ namespace Visual_Perpus
             this.label2.TabIndex = 16;
             this.label2.Text = "DAFTAR BUKU";
             // 
-            // bunifuThinButton22
+            // BtnAddBook
             // 
-            this.bunifuThinButton22.ActiveBorderThickness = 1;
-            this.bunifuThinButton22.ActiveCornerRadius = 20;
-            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.SpringGreen;
-            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.SpringGreen;
-            this.bunifuThinButton22.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "TAMBAH";
-            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton22.ForeColor = System.Drawing.Color.Black;
-            this.bunifuThinButton22.IdleBorderThickness = 1;
-            this.bunifuThinButton22.IdleCornerRadius = 20;
-            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.SpringGreen;
-            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.SpringGreen;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(697, 112);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(132, 41);
-            this.bunifuThinButton22.TabIndex = 20;
-            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
+            this.BtnAddBook.ActiveBorderThickness = 1;
+            this.BtnAddBook.ActiveCornerRadius = 20;
+            this.BtnAddBook.ActiveFillColor = System.Drawing.Color.SpringGreen;
+            this.BtnAddBook.ActiveForecolor = System.Drawing.Color.White;
+            this.BtnAddBook.ActiveLineColor = System.Drawing.Color.SpringGreen;
+            this.BtnAddBook.BackColor = System.Drawing.Color.White;
+            this.BtnAddBook.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAddBook.BackgroundImage")));
+            this.BtnAddBook.ButtonText = "TAMBAH";
+            this.BtnAddBook.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnAddBook.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAddBook.ForeColor = System.Drawing.Color.Black;
+            this.BtnAddBook.IdleBorderThickness = 1;
+            this.BtnAddBook.IdleCornerRadius = 20;
+            this.BtnAddBook.IdleFillColor = System.Drawing.Color.White;
+            this.BtnAddBook.IdleForecolor = System.Drawing.Color.SpringGreen;
+            this.BtnAddBook.IdleLineColor = System.Drawing.Color.SpringGreen;
+            this.BtnAddBook.Location = new System.Drawing.Point(697, 112);
+            this.BtnAddBook.Margin = new System.Windows.Forms.Padding(5);
+            this.BtnAddBook.Name = "BtnAddBook";
+            this.BtnAddBook.Size = new System.Drawing.Size(132, 41);
+            this.BtnAddBook.TabIndex = 20;
+            this.BtnAddBook.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnAddBook.Click += new System.EventHandler(this.BtnAddBook_Click);
             // 
             // bunifuThinButton23
             // 
@@ -177,20 +177,20 @@ namespace Visual_Perpus
             this.bunifuThinButton23.TabIndex = 21;
             this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dataBukuAdmin
+            // Databukuadmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1197, 684);
             this.Controls.Add(this.bunifuThinButton23);
-            this.Controls.Add(this.bunifuThinButton22);
+            this.Controls.Add(this.BtnAddBook);
             this.Controls.Add(this.bunifuCustomDataGrid1);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.bunifuMaterialTextbox1);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "dataBukuAdmin";
+            this.Name = "Databukuadmin";
             this.Text = "dataBukuAdmin";
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
             this.ResumeLayout(false);
@@ -203,7 +203,7 @@ namespace Visual_Perpus
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
         private System.Windows.Forms.Label label2;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
+        private Bunifu.Framework.UI.BunifuThinButton2 BtnAddBook;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
     }
 }
