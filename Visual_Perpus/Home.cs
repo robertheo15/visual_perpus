@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Visual_Perpus
 {
-    public partial class Form1 : Form
+    public partial class Home : Form
     {
-        public Form1()
+        public Home()
         {
             InitializeComponent();
         }
@@ -20,7 +20,7 @@ namespace Visual_Perpus
         private void bunifuFlatButton19_Click(object sender, EventArgs e)
         {
             panel2.Controls.Clear();
-            peminjaman pinjam = new peminjaman();
+            Peminjaman pinjam = new Peminjaman();
             pinjam.TopLevel = false;
             pinjam.Show();
             panel2.Controls.Add(pinjam);
@@ -36,7 +36,7 @@ namespace Visual_Perpus
         private void bunifuFlatButton18_Click(object sender, EventArgs e)
         {
             panel2.Controls.Clear();
-            pengembalian kembali = new pengembalian();
+            Pengembalian kembali = new Pengembalian();
             kembali.TopLevel = false;
             kembali.Show();
             panel2.Controls.Add(kembali);
@@ -47,7 +47,7 @@ namespace Visual_Perpus
         private void bunifuFlatButton17_Click(object sender, EventArgs e)
         {
             panel2.Controls.Clear();
-            dataBukuMember datBuk = new dataBukuMember();
+            Databukumember datBuk = new Databukumember();
             datBuk.TopLevel = false;
             datBuk.Show();
             panel2.Controls.Add(datBuk);
@@ -58,7 +58,7 @@ namespace Visual_Perpus
         private void bunifuFlatButton10_Click(object sender, EventArgs e)
         {
             panel2.Controls.Clear();
-            login login = new login();
+            Login login = new Login();
             login.TopLevel = false;
             login.Show();
             panel2.Controls.Add(login);

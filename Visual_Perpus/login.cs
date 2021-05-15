@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Visual_Perpus
 {
-    public partial class login : Form
+    public partial class Login : Form
     {
-        public login()
+        public Login()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace Visual_Perpus
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            admin adm = new admin();
+            Admin adm = new Admin();
             adm.Show();
             this.Hide();
         }

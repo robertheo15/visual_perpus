@@ -1,7 +1,7 @@
 ﻿
 namespace Visual_Perpus
 {
-    partial class dataPinjam
+    partial class Datapinjam
     {
         /// <summary>
         /// Required designer variable.

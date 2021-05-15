@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Visual_Perpus
 {
-    public partial class addBook : Form
+    public partial class Addbook : Form
     {
-        public addBook()
+        public Addbook()
         {
             InitializeComponent();
         }
