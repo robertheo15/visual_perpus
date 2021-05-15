@@ -38,12 +38,10 @@ namespace Visual_Perpus
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
@@ -101,7 +99,7 @@ namespace Visual_Perpus
             this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.DarkTurquoise;
             this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
             this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton21.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
             this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
             this.bunifuThinButton21.ButtonText = "CARI";
             this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -138,16 +136,6 @@ namespace Visual_Perpus
             this.label4.Size = new System.Drawing.Size(75, 25);
             this.label4.TabIndex = 5;
             this.label4.Text = "Nama :";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label5.Location = new System.Drawing.Point(22, 103);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(94, 25);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Jurusan :";
             // 
             // label6
             // 
@@ -188,16 +176,6 @@ namespace Visual_Perpus
             this.label9.Size = new System.Drawing.Size(29, 29);
             this.label9.TabIndex = 10;
             this.label9.Text = "--";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label10.Location = new System.Drawing.Point(137, 103);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(29, 29);
-            this.label10.TabIndex = 11;
-            this.label10.Text = "--";
             // 
             // label11
             // 
@@ -309,20 +287,18 @@ namespace Visual_Perpus
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Location = new System.Drawing.Point(58, 180);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1007, 152);
             this.panel1.TabIndex = 18;
             // 
-            // peminjaman
+            // Peminjaman
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -338,7 +314,7 @@ namespace Visual_Perpus
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "peminjaman";
+            this.Name = "Peminjaman";
             this.Text = "PEMINJAMAN";
             this.Load += new System.EventHandler(this.peminjaman_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
@@ -356,12 +332,10 @@ namespace Visual_Perpus
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;

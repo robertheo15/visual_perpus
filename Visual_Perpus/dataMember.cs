@@ -17,6 +17,7 @@ namespace Visual_Perpus
         public Datamember()
         {
             InitializeComponent();
+            updateView();
         }
 
         private void BtnAddDataMember_Click(object sender, EventArgs e)
@@ -43,12 +44,5 @@ namespace Visual_Perpus
             }
             con.Close();
         }
-
-        private void USER_Shown(object sender, EventArgs e)
-        {
-            updateView();
-
-        }
-
     }
 }

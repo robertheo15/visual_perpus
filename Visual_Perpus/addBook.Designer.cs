@@ -30,179 +30,228 @@ namespace Visual_Perpus
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Addbook));
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.username = new System.Windows.Forms.Label();
+            this.year = new System.Windows.Forms.Label();
+            this.BtnAddBook = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.TextBoxType = new System.Windows.Forms.TextBox();
+            this.type = new System.Windows.Forms.Label();
+            this.TextBoxTitle = new System.Windows.Forms.TextBox();
+            this.location = new System.Windows.Forms.Label();
+            this.title = new System.Windows.Forms.Label();
+            this.BookYear = new System.Windows.Forms.DateTimePicker();
+            this.TextBoxQty = new System.Windows.Forms.TextBox();
+            this.qty = new System.Windows.Forms.Label();
+            this.TextBoxPrice = new System.Windows.Forms.TextBox();
+            this.price = new System.Windows.Forms.Label();
+            this.TextBoxAuthor = new System.Windows.Forms.TextBox();
+            this.author = new System.Windows.Forms.Label();
+            this.TextBoxCategory = new System.Windows.Forms.TextBox();
+            this.category = new System.Windows.Forms.Label();
+            this.TextBoxLocation = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // textBox5
+            // year
             // 
-            this.textBox5.Location = new System.Drawing.Point(215, 183);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(217, 22);
-            this.textBox5.TabIndex = 386;
+            this.year.AutoSize = true;
+            this.year.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.year.ForeColor = System.Drawing.Color.Black;
+            this.year.Location = new System.Drawing.Point(78, 165);
+            this.year.Name = "year";
+            this.year.Size = new System.Drawing.Size(90, 17);
+            this.year.TabIndex = 383;
+            this.year.Text = "Tahun Terbit";
             // 
-            // label5
+            // BtnAddBook
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(78, 186);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(39, 17);
-            this.label5.TabIndex = 385;
-            this.label5.Text = "ISBN";
+            this.BtnAddBook.ActiveBorderThickness = 1;
+            this.BtnAddBook.ActiveCornerRadius = 20;
+            this.BtnAddBook.ActiveFillColor = System.Drawing.Color.Turquoise;
+            this.BtnAddBook.ActiveForecolor = System.Drawing.Color.DarkOliveGreen;
+            this.BtnAddBook.ActiveLineColor = System.Drawing.Color.DarkOliveGreen;
+            this.BtnAddBook.BackColor = System.Drawing.SystemColors.Control;
+            this.BtnAddBook.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAddBook.BackgroundImage")));
+            this.BtnAddBook.ButtonText = "TAMBAH";
+            this.BtnAddBook.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnAddBook.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAddBook.ForeColor = System.Drawing.Color.White;
+            this.BtnAddBook.IdleBorderThickness = 1;
+            this.BtnAddBook.IdleCornerRadius = 20;
+            this.BtnAddBook.IdleFillColor = System.Drawing.Color.OliveDrab;
+            this.BtnAddBook.IdleForecolor = System.Drawing.Color.White;
+            this.BtnAddBook.IdleLineColor = System.Drawing.Color.OliveDrab;
+            this.BtnAddBook.Location = new System.Drawing.Point(333, 289);
+            this.BtnAddBook.Margin = new System.Windows.Forms.Padding(5);
+            this.BtnAddBook.Name = "BtnAddBook";
+            this.BtnAddBook.Size = new System.Drawing.Size(99, 38);
+            this.BtnAddBook.TabIndex = 380;
+            this.BtnAddBook.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnAddBook.Click += new System.EventHandler(this.BtnAddBook_Click);
             // 
-            // textBox4
+            // TextBoxType
             // 
-            this.textBox4.Location = new System.Drawing.Point(215, 157);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(217, 22);
-            this.textBox4.TabIndex = 384;
+            this.TextBoxType.Location = new System.Drawing.Point(215, 214);
+            this.TextBoxType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TextBoxType.Name = "TextBoxType";
+            this.TextBoxType.Size = new System.Drawing.Size(217, 22);
+            this.TextBoxType.TabIndex = 379;
             // 
-            // label4
+            // type
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(78, 160);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 17);
-            this.label4.TabIndex = 383;
-            this.label4.Text = "Tahun Terbit";
+            this.type.AutoSize = true;
+            this.type.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.type.ForeColor = System.Drawing.Color.Black;
+            this.type.Location = new System.Drawing.Point(78, 218);
+            this.type.Name = "type";
+            this.type.Size = new System.Drawing.Size(71, 17);
+            this.type.TabIndex = 378;
+            this.type.Text = "Tipe buku";
             // 
-            // textBox3
+            // TextBoxTitle
             // 
-            this.textBox3.Location = new System.Drawing.Point(215, 131);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(217, 22);
-            this.textBox3.TabIndex = 382;
+            this.TextBoxTitle.Location = new System.Drawing.Point(215, 52);
+            this.TextBoxTitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TextBoxTitle.Name = "TextBoxTitle";
+            this.TextBoxTitle.Size = new System.Drawing.Size(217, 22);
+            this.TextBoxTitle.TabIndex = 376;
             // 
-            // label3
+            // location
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(78, 134);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 17);
-            this.label3.TabIndex = 381;
-            this.label3.Text = "Penerbit";
+            this.location.AutoSize = true;
+            this.location.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.location.ForeColor = System.Drawing.Color.Black;
+            this.location.Location = new System.Drawing.Point(78, 136);
+            this.location.Name = "location";
+            this.location.Size = new System.Drawing.Size(33, 17);
+            this.location.TabIndex = 375;
+            this.location.Text = "Rak";
             // 
-            // button1
+            // title
             // 
-            this.button1.ActiveBorderThickness = 1;
-            this.button1.ActiveCornerRadius = 20;
-            this.button1.ActiveFillColor = System.Drawing.Color.Turquoise;
-            this.button1.ActiveForecolor = System.Drawing.Color.DarkOliveGreen;
-            this.button1.ActiveLineColor = System.Drawing.Color.DarkOliveGreen;
-            this.button1.BackColor = System.Drawing.SystemColors.Control;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.ButtonText = "TAMBAH";
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.IdleBorderThickness = 1;
-            this.button1.IdleCornerRadius = 20;
-            this.button1.IdleFillColor = System.Drawing.Color.OliveDrab;
-            this.button1.IdleForecolor = System.Drawing.Color.White;
-            this.button1.IdleLineColor = System.Drawing.Color.OliveDrab;
-            this.button1.Location = new System.Drawing.Point(381, 264);
-            this.button1.Margin = new System.Windows.Forms.Padding(5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 38);
-            this.button1.TabIndex = 380;
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.title.AutoSize = true;
+            this.title.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.title.ForeColor = System.Drawing.Color.Black;
+            this.title.Location = new System.Drawing.Point(78, 56);
+            this.title.Name = "title";
+            this.title.Size = new System.Drawing.Size(78, 17);
+            this.title.TabIndex = 374;
+            this.title.Text = "Judul Buku";
             // 
-            // textBox7
+            // BookYear
             // 
-            this.textBox7.Location = new System.Drawing.Point(215, 209);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(217, 22);
-            this.textBox7.TabIndex = 379;
+            this.BookYear.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.BookYear.Location = new System.Drawing.Point(215, 161);
+            this.BookYear.MaxDate = new System.DateTime(2099, 12, 31, 0, 0, 0, 0);
+            this.BookYear.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.BookYear.Name = "BookYear";
+            this.BookYear.Size = new System.Drawing.Size(217, 22);
+            this.BookYear.TabIndex = 387;
             // 
-            // label8
+            // TextBoxQty
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(78, 213);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(83, 17);
-            this.label8.TabIndex = 378;
-            this.label8.Text = "Harga Buku";
+            this.TextBoxQty.Location = new System.Drawing.Point(215, 188);
+            this.TextBoxQty.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TextBoxQty.Name = "TextBoxQty";
+            this.TextBoxQty.Size = new System.Drawing.Size(217, 22);
+            this.TextBoxQty.TabIndex = 389;
             // 
-            // textBox2
+            // qty
             // 
-            this.textBox2.Location = new System.Drawing.Point(215, 105);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(217, 22);
-            this.textBox2.TabIndex = 377;
+            this.qty.AutoSize = true;
+            this.qty.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.qty.ForeColor = System.Drawing.Color.Black;
+            this.qty.Location = new System.Drawing.Point(78, 192);
+            this.qty.Name = "qty";
+            this.qty.Size = new System.Drawing.Size(53, 17);
+            this.qty.TabIndex = 388;
+            this.qty.Text = "Jumlah";
             // 
-            // textBox1
+            // TextBoxPrice
             // 
-            this.textBox1.Location = new System.Drawing.Point(215, 79);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(217, 22);
-            this.textBox1.TabIndex = 376;
+            this.TextBoxPrice.Location = new System.Drawing.Point(215, 240);
+            this.TextBoxPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TextBoxPrice.Name = "TextBoxPrice";
+            this.TextBoxPrice.Size = new System.Drawing.Size(217, 22);
+            this.TextBoxPrice.TabIndex = 391;
             // 
-            // label2
+            // price
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(78, 108);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 17);
-            this.label2.TabIndex = 375;
-            this.label2.Text = "Penulis";
+            this.price.AutoSize = true;
+            this.price.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.price.ForeColor = System.Drawing.Color.Black;
+            this.price.Location = new System.Drawing.Point(78, 244);
+            this.price.Name = "price";
+            this.price.Size = new System.Drawing.Size(83, 17);
+            this.price.TabIndex = 390;
+            this.price.Text = "Harga Buku";
             // 
-            // username
+            // TextBoxAuthor
             // 
-            this.username.AutoSize = true;
-            this.username.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.username.ForeColor = System.Drawing.Color.Black;
-            this.username.Location = new System.Drawing.Point(78, 83);
-            this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(78, 17);
-            this.username.TabIndex = 374;
-            this.username.Text = "Judul Buku";
+            this.TextBoxAuthor.Location = new System.Drawing.Point(215, 79);
+            this.TextBoxAuthor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TextBoxAuthor.Name = "TextBoxAuthor";
+            this.TextBoxAuthor.Size = new System.Drawing.Size(217, 22);
+            this.TextBoxAuthor.TabIndex = 393;
             // 
-            // Addmember
+            // author
+            // 
+            this.author.AutoSize = true;
+            this.author.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.author.ForeColor = System.Drawing.Color.Black;
+            this.author.Location = new System.Drawing.Point(78, 82);
+            this.author.Name = "author";
+            this.author.Size = new System.Drawing.Size(54, 17);
+            this.author.TabIndex = 392;
+            this.author.Text = "Penulis";
+            // 
+            // TextBoxCategory
+            // 
+            this.TextBoxCategory.Location = new System.Drawing.Point(215, 107);
+            this.TextBoxCategory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TextBoxCategory.Name = "TextBoxCategory";
+            this.TextBoxCategory.Size = new System.Drawing.Size(217, 22);
+            this.TextBoxCategory.TabIndex = 395;
+            // 
+            // category
+            // 
+            this.category.AutoSize = true;
+            this.category.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.category.ForeColor = System.Drawing.Color.Black;
+            this.category.Location = new System.Drawing.Point(78, 110);
+            this.category.Name = "category";
+            this.category.Size = new System.Drawing.Size(76, 21);
+            this.category.TabIndex = 394;
+            this.category.Text = "Kategori";
+            // 
+            // TextBoxLocation
+            // 
+            this.TextBoxLocation.Location = new System.Drawing.Point(215, 135);
+            this.TextBoxLocation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TextBoxLocation.Name = "TextBoxLocation";
+            this.TextBoxLocation.Size = new System.Drawing.Size(217, 22);
+            this.TextBoxLocation.TabIndex = 396;
+            // 
+            // Addbook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(583, 410);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.username);
-            this.Name = "Addmember";
+            this.ClientSize = new System.Drawing.Size(544, 391);
+            this.Controls.Add(this.TextBoxLocation);
+            this.Controls.Add(this.TextBoxCategory);
+            this.Controls.Add(this.category);
+            this.Controls.Add(this.TextBoxAuthor);
+            this.Controls.Add(this.author);
+            this.Controls.Add(this.TextBoxPrice);
+            this.Controls.Add(this.price);
+            this.Controls.Add(this.TextBoxQty);
+            this.Controls.Add(this.qty);
+            this.Controls.Add(this.BookYear);
+            this.Controls.Add(this.year);
+            this.Controls.Add(this.BtnAddBook);
+            this.Controls.Add(this.TextBoxType);
+            this.Controls.Add(this.type);
+            this.Controls.Add(this.TextBoxTitle);
+            this.Controls.Add(this.location);
+            this.Controls.Add(this.title);
+            this.Name = "Addbook";
             this.Text = "Addmember";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -210,19 +259,22 @@ namespace Visual_Perpus
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label3;
-        private Bunifu.Framework.UI.BunifuThinButton2 button1;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label username;
+        private System.Windows.Forms.Label year;
+        private Bunifu.Framework.UI.BunifuThinButton2 BtnAddBook;
+        private System.Windows.Forms.TextBox TextBoxType;
+        private System.Windows.Forms.Label type;
+        private System.Windows.Forms.TextBox TextBoxTitle;
+        private System.Windows.Forms.Label location;
+        private System.Windows.Forms.Label title;
+        private System.Windows.Forms.DateTimePicker BookYear;
+        private System.Windows.Forms.TextBox TextBoxQty;
+        private System.Windows.Forms.Label qty;
+        private System.Windows.Forms.TextBox TextBoxPrice;
+        private System.Windows.Forms.Label price;
+        private System.Windows.Forms.TextBox TextBoxAuthor;
+        private System.Windows.Forms.Label author;
+        private System.Windows.Forms.TextBox TextBoxCategory;
+        private System.Windows.Forms.Label category;
+        private System.Windows.Forms.TextBox TextBoxLocation;
     }
 }

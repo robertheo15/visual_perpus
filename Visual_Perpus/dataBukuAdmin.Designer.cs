@@ -32,24 +32,30 @@ namespace Visual_Perpus
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Databukuadmin));
-            this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.DataGridBook = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label2 = new System.Windows.Forms.Label();
             this.BtnAddBook = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
+            this.Col1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Col2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridBook)).BeginInit();
             this.SuspendLayout();
             // 
-            // bunifuCustomDataGrid1
+            // DataGridBook
             // 
-            this.bunifuCustomDataGrid1.AllowUserToAddRows = false;
-            this.bunifuCustomDataGrid1.AllowUserToDeleteRows = false;
+            this.DataGridBook.AllowUserToAddRows = false;
+            this.DataGridBook.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DataGridBook.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.DataGridBook.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.DataGridBook.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DataGridBook.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -57,20 +63,27 @@ namespace Visual_Perpus
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bunifuCustomDataGrid1.DoubleBuffered = true;
-            this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(36, 172);
-            this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
-            this.bunifuCustomDataGrid1.ReadOnly = true;
-            this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bunifuCustomDataGrid1.RowHeadersWidth = 51;
-            this.bunifuCustomDataGrid1.RowTemplate.Height = 24;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(944, 452);
-            this.bunifuCustomDataGrid1.TabIndex = 19;
+            this.DataGridBook.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DataGridBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridBook.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Col1,
+            this.Col2,
+            this.col3,
+            this.col4,
+            this.col5,
+            this.col6});
+            this.DataGridBook.DoubleBuffered = true;
+            this.DataGridBook.EnableHeadersVisualStyles = false;
+            this.DataGridBook.HeaderBgColor = System.Drawing.Color.SeaGreen;
+            this.DataGridBook.HeaderForeColor = System.Drawing.Color.SeaGreen;
+            this.DataGridBook.Location = new System.Drawing.Point(36, 172);
+            this.DataGridBook.Name = "DataGridBook";
+            this.DataGridBook.ReadOnly = true;
+            this.DataGridBook.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DataGridBook.RowHeadersWidth = 51;
+            this.DataGridBook.RowTemplate.Height = 24;
+            this.DataGridBook.Size = new System.Drawing.Size(944, 452);
+            this.DataGridBook.TabIndex = 19;
             // 
             // bunifuThinButton21
             // 
@@ -177,6 +190,54 @@ namespace Visual_Perpus
             this.bunifuThinButton23.TabIndex = 21;
             this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // Col1
+            // 
+            this.Col1.HeaderText = "Title";
+            this.Col1.MinimumWidth = 6;
+            this.Col1.Name = "Col1";
+            this.Col1.ReadOnly = true;
+            this.Col1.Width = 125;
+            // 
+            // Col2
+            // 
+            this.Col2.HeaderText = "author";
+            this.Col2.MinimumWidth = 6;
+            this.Col2.Name = "Col2";
+            this.Col2.ReadOnly = true;
+            this.Col2.Width = 125;
+            // 
+            // col3
+            // 
+            this.col3.HeaderText = "year";
+            this.col3.MinimumWidth = 6;
+            this.col3.Name = "col3";
+            this.col3.ReadOnly = true;
+            this.col3.Width = 125;
+            // 
+            // col4
+            // 
+            this.col4.HeaderText = "quantity";
+            this.col4.MinimumWidth = 6;
+            this.col4.Name = "col4";
+            this.col4.ReadOnly = true;
+            this.col4.Width = 125;
+            // 
+            // col5
+            // 
+            this.col5.HeaderText = "type";
+            this.col5.MinimumWidth = 6;
+            this.col5.Name = "col5";
+            this.col5.ReadOnly = true;
+            this.col5.Width = 125;
+            // 
+            // col6
+            // 
+            this.col6.HeaderText = "price";
+            this.col6.MinimumWidth = 6;
+            this.col6.Name = "col6";
+            this.col6.ReadOnly = true;
+            this.col6.Width = 125;
+            // 
             // Databukuadmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -185,25 +246,31 @@ namespace Visual_Perpus
             this.ClientSize = new System.Drawing.Size(1197, 684);
             this.Controls.Add(this.bunifuThinButton23);
             this.Controls.Add(this.BtnAddBook);
-            this.Controls.Add(this.bunifuCustomDataGrid1);
+            this.Controls.Add(this.DataGridBook);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.bunifuMaterialTextbox1);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Databukuadmin";
             this.Text = "dataBukuAdmin";
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridBook)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid DataGridBook;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuThinButton2 BtnAddBook;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Col1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Col2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col6;
     }
 }

@@ -84,7 +84,6 @@ namespace Visual_Perpus
         {
             String username = TextBoxUsername.Text;
             String password = TextBoxPassword.Text;
-            //String stat = textstatus.Text;
 
             if (username.Equals("username") || password.Equals("password"))
             {
