@@ -341,7 +341,7 @@
         iGUAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="bunifuFlatButton10.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnAdminLogin.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAABGdBTUEAALGPC/xhBQAAAx5JREFUeF7t
         m7mqFEEYRkcDEVwSl8QtEQVFjNRAweUFRBHfRNTMJdHE9QUUNBARxQUENVFEBDdQX0Aj9x0N3L5T3aVz
@@ -360,7 +360,7 @@
         Y4wxxhhjOkuv9xtCSWI3eFU3OwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuFlatButton17.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnDataBuku.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAiFJREFUeF7t
         mztLXFEURqezUkHRtCrEP6BFxBSaX+EjnYiFlYURC7sUAR9YqqQSsfbZ+ehibNVGkn+imKxP7oFbnHGc
@@ -375,7 +375,7 @@
         xDInqWm8AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuFlatButton18.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnPengembalian.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAA3lJREFUeF7t
         m7uqFEEQhjcQA830KGbGGiuIFwy9PYqp+AAGXo4P4SMYiLl4AUUjBc29K+gLKOj/r6dkaLq2u6qrZ9x1

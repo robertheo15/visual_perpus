@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Visual_Perpus
 {
-    public partial class dataBukuAdmin : Form
+    public partial class Databukuadmin : Form
     {
-        public dataBukuAdmin()
+        public Databukuadmin()
         {
             InitializeComponent();
         }

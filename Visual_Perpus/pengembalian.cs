@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Visual_Perpus
 {
-    public partial class pengembalian : Form
+    public partial class Pengembalian : Form
     {
-        public pengembalian()
+        public Pengembalian()
         {
             InitializeComponent();
         }

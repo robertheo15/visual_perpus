@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Visual_Perpus
 {
-    public partial class peminjaman : Form
+    public partial class Peminjaman : Form
     {
-        public peminjaman()
+        public Peminjaman()
         {
             InitializeComponent();
         }
