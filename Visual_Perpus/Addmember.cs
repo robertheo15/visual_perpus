@@ -15,10 +15,11 @@ namespace Visual_Perpus
         private void BtnAddMember_Click(object sender, EventArgs e)
         {
             Database db = new Database();
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO `users` (`id_role`, `username`,`password`,`first_name`, `last_name`)VALUES (@idRole, @username, @password, @firstName, @lastName)", db.GetConnection());
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO `users` (`id_role`, `nim`, `username`,`password`,`first_name`, `last_name`)VALUES (@idRole, @nim ,@username, @password, @firstName, @lastName)", db.GetConnection());
             cmd.Parameters.Add("@idRole", MySqlDbType.Int32).Value = 2;
             cmd.Parameters.Add("@username", MySqlDbType.VarChar).Value = TextBoxUsername.Text;
-            cmd.Parameters.Add("@password", MySqlDbType.VarChar).Value = TextBoxPassword.Text;
+            cmd.Parameters.Add("@nim", MySqlDbType.VarChar).Value = textBoxNIM.Text;
+            cmd.Parameters.Add("@password", MySqlDbType.VarChar).Value = "";
             cmd.Parameters.Add("@firstName", MySqlDbType.VarChar).Value = TextBoxFirstName.Text;
             cmd.Parameters.Add("@lastName", MySqlDbType.VarChar).Value = TextBoxLastName.Text;         
             db.OpenConnection();
@@ -26,9 +27,7 @@ namespace Visual_Perpus
             // check if the textboxes contains the default values 
             if (!checkTextBoxesValues())
             {
-                // check if the password equal the confirm password
-                if (TextBoxPassword.Text.Equals(TextboxConfirmPassword.Text))
-                {
+
                     // check if this username already exists
                     if (checkUsername())
                     {
@@ -46,11 +45,6 @@ namespace Visual_Perpus
                             MessageBox.Show("ERROR");
                         }
                     }
-                }
-                else
-                {
-                    MessageBox.Show("Wrong Confirmation Password", "Password Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
-                }
             }
             else
             {
@@ -83,9 +77,9 @@ namespace Visual_Perpus
         public Boolean checkTextBoxesValues()
         {
             String username = TextBoxUsername.Text;
-            String password = TextBoxPassword.Text;
 
-            if (username.Equals("username") || password.Equals("password"))
+
+            if (username.Equals("username"))
             {
                 return true;
             }

@@ -39,7 +39,10 @@ namespace Visual_Perpus
             this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label2 = new System.Windows.Forms.Label();
             this.col1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NIM = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RegisterDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridMember)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,9 +105,9 @@ namespace Visual_Perpus
             this.DataGridMember.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGridMember.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Aqua;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
@@ -112,11 +115,14 @@ namespace Visual_Perpus
             this.DataGridMember.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridMember.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.col1,
-            this.col2});
+            this.NIM,
+            this.FirstName,
+            this.LastName,
+            this.RegisterDate});
             this.DataGridMember.DoubleBuffered = true;
             this.DataGridMember.EnableHeadersVisualStyles = false;
-            this.DataGridMember.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.DataGridMember.HeaderForeColor = System.Drawing.Color.SeaGreen;
+            this.DataGridMember.HeaderBgColor = System.Drawing.Color.Aqua;
+            this.DataGridMember.HeaderForeColor = System.Drawing.Color.Black;
             this.DataGridMember.Location = new System.Drawing.Point(38, 172);
             this.DataGridMember.Name = "DataGridMember";
             this.DataGridMember.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -186,12 +192,33 @@ namespace Visual_Perpus
             this.col1.Name = "col1";
             this.col1.Width = 125;
             // 
-            // col2
+            // NIM
             // 
-            this.col2.HeaderText = "Password";
-            this.col2.MinimumWidth = 6;
-            this.col2.Name = "col2";
-            this.col2.Width = 125;
+            this.NIM.HeaderText = "NIM";
+            this.NIM.MinimumWidth = 6;
+            this.NIM.Name = "NIM";
+            this.NIM.Width = 125;
+            // 
+            // FirstName
+            // 
+            this.FirstName.HeaderText = "First Name";
+            this.FirstName.MinimumWidth = 6;
+            this.FirstName.Name = "FirstName";
+            this.FirstName.Width = 125;
+            // 
+            // LastName
+            // 
+            this.LastName.HeaderText = "Last Name";
+            this.LastName.MinimumWidth = 6;
+            this.LastName.Name = "LastName";
+            this.LastName.Width = 125;
+            // 
+            // RegisterDate
+            // 
+            this.RegisterDate.HeaderText = "Register Date";
+            this.RegisterDate.MinimumWidth = 6;
+            this.RegisterDate.Name = "RegisterDate";
+            this.RegisterDate.Width = 125;
             // 
             // Datamember
             // 
@@ -222,6 +249,9 @@ namespace Visual_Perpus
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridViewTextBoxColumn col1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NIM;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FirstName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LastName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RegisterDate;
     }
 }

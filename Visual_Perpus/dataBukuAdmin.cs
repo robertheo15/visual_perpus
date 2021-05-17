@@ -35,17 +35,23 @@ namespace Visual_Perpus
             MySqlDataReader reader = command.ExecuteReader();
             DataGridBook.Rows.Clear();
             DataGridBook.Columns.Clear();
-            DataGridBook.Columns.Add("Col1", "Title");
-            DataGridBook.Columns.Add("Col2", "Author");
-            DataGridBook.Columns.Add("col3", "Year");
-            DataGridBook.Columns.Add("Col4", "Qty");
-            DataGridBook.Columns.Add("Col5", "Type");
-            DataGridBook.Columns.Add("Col6", "Price");
+            DataGridBook.Columns.Add("Col1", "Book ID");
+            DataGridBook.Columns.Add("Col2", "Title");
+            DataGridBook.Columns.Add("Col3", "Author");
+            DataGridBook.Columns.Add("Col4", "Year");
+            DataGridBook.Columns.Add("Col5", "Qty");
+            DataGridBook.Columns.Add("Col6", "Type");
+            DataGridBook.Columns.Add("Col7", "Price");
             while (reader.Read())
             {
-                DataGridBook.Rows.Add(reader.GetString(3), reader.GetString(4), reader.GetString(5), reader.GetString(6), reader.GetString(7), reader.GetString(8));
+                DataGridBook.Rows.Add(reader.GetString(0), reader.GetString(3), reader.GetString(4), reader.GetString(5), reader.GetString(6), reader.GetString(7), reader.GetString(8));
             }
             con.Close();
+        }
+
+        private void DataGridBook_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

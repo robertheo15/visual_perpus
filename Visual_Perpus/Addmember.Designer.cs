@@ -31,16 +31,14 @@ namespace Visual_Perpus
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Addmember));
             this.BtnAddMember = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.TextBoxPassword = new System.Windows.Forms.TextBox();
             this.TextBoxUsername = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.TextBoxFirstName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.TextBoxLastName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.TextboxConfirmPassword = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.textBoxNIM = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BtnAddMember
@@ -69,39 +67,20 @@ namespace Visual_Perpus
             this.BtnAddMember.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BtnAddMember.Click += new System.EventHandler(this.BtnAddMember_Click);
             // 
-            // TextBoxPassword
-            // 
-            this.TextBoxPassword.Location = new System.Drawing.Point(218, 119);
-            this.TextBoxPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.TextBoxPassword.Name = "TextBoxPassword";
-            this.TextBoxPassword.Size = new System.Drawing.Size(217, 22);
-            this.TextBoxPassword.TabIndex = 353;
-            // 
             // TextBoxUsername
             // 
-            this.TextBoxUsername.Location = new System.Drawing.Point(218, 93);
+            this.TextBoxUsername.Location = new System.Drawing.Point(252, 144);
             this.TextBoxUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TextBoxUsername.Name = "TextBoxUsername";
             this.TextBoxUsername.Size = new System.Drawing.Size(217, 22);
             this.TextBoxUsername.TabIndex = 352;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(70, 122);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 17);
-            this.label2.TabIndex = 348;
-            this.label2.Text = "Password";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(70, 97);
+            this.label1.Location = new System.Drawing.Point(104, 148);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 17);
             this.label1.TabIndex = 347;
@@ -109,7 +88,7 @@ namespace Visual_Perpus
             // 
             // TextBoxFirstName
             // 
-            this.TextBoxFirstName.Location = new System.Drawing.Point(218, 177);
+            this.TextBoxFirstName.Location = new System.Drawing.Point(252, 170);
             this.TextBoxFirstName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TextBoxFirstName.Name = "TextBoxFirstName";
             this.TextBoxFirstName.Size = new System.Drawing.Size(217, 22);
@@ -120,7 +99,7 @@ namespace Visual_Perpus
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(70, 180);
+            this.label3.Location = new System.Drawing.Point(104, 173);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(89, 17);
             this.label3.TabIndex = 368;
@@ -128,7 +107,7 @@ namespace Visual_Perpus
             // 
             // TextBoxLastName
             // 
-            this.TextBoxLastName.Location = new System.Drawing.Point(218, 206);
+            this.TextBoxLastName.Location = new System.Drawing.Point(252, 196);
             this.TextBoxLastName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TextBoxLastName.Name = "TextBoxLastName";
             this.TextBoxLastName.Size = new System.Drawing.Size(217, 22);
@@ -139,30 +118,30 @@ namespace Visual_Perpus
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(70, 210);
+            this.label4.Location = new System.Drawing.Point(104, 200);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(107, 17);
             this.label4.TabIndex = 370;
             this.label4.Text = "Nama belakang";
             // 
-            // TextboxConfirmPassword
+            // textBoxNIM
             // 
-            this.TextboxConfirmPassword.Location = new System.Drawing.Point(218, 147);
-            this.TextboxConfirmPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.TextboxConfirmPassword.Name = "TextboxConfirmPassword";
-            this.TextboxConfirmPassword.Size = new System.Drawing.Size(217, 22);
-            this.TextboxConfirmPassword.TabIndex = 373;
+            this.textBoxNIM.Location = new System.Drawing.Point(252, 118);
+            this.textBoxNIM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxNIM.Name = "textBoxNIM";
+            this.textBoxNIM.Size = new System.Drawing.Size(217, 22);
+            this.textBoxNIM.TabIndex = 373;
             // 
-            // label5
+            // label2
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(70, 150);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(121, 17);
-            this.label5.TabIndex = 372;
-            this.label5.Text = "Confirm Password";
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(104, 122);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(32, 17);
+            this.label2.TabIndex = 372;
+            this.label2.Text = "NIM";
             // 
             // Addmember
             // 
@@ -170,16 +149,14 @@ namespace Visual_Perpus
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(587, 414);
-            this.Controls.Add(this.TextboxConfirmPassword);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.textBoxNIM);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.TextBoxLastName);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.TextBoxFirstName);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.BtnAddMember);
-            this.Controls.Add(this.TextBoxPassword);
             this.Controls.Add(this.TextBoxUsername);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Addmember";
             this.Text = "addBook";
@@ -191,15 +168,13 @@ namespace Visual_Perpus
         #endregion
 
         private Bunifu.Framework.UI.BunifuThinButton2 BtnAddMember;
-        private System.Windows.Forms.TextBox TextBoxPassword;
         private System.Windows.Forms.TextBox TextBoxUsername;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox TextBoxFirstName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox TextBoxLastName;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox TextboxConfirmPassword;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBoxNIM;
+        private System.Windows.Forms.Label label2;
     }
 }

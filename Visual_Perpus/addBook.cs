@@ -28,7 +28,7 @@ namespace Visual_Perpus
             cmd.Parameters.Add("@author", MySqlDbType.VarChar).Value = TextBoxAuthor.Text;
             cmd.Parameters.Add("@year", MySqlDbType.DateTime).Value = BookYear.Value;
             cmd.Parameters.Add("@qty", MySqlDbType.VarChar).Value = TextBoxQty.Text;
-            cmd.Parameters.Add("@type", MySqlDbType.VarChar).Value = TextBoxPrice.Text;
+            cmd.Parameters.Add("@type", MySqlDbType.VarChar).Value = TextBoxType.Text;
             cmd.Parameters.Add("@price", MySqlDbType.VarChar).Value = TextBoxPrice.Text;
             db.OpenConnection();
 

@@ -38,6 +38,7 @@ namespace Visual_Perpus
             this.label2 = new System.Windows.Forms.Label();
             this.BtnAddBook = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.BookID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Col1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Col2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,15 +58,16 @@ namespace Visual_Perpus
             this.DataGridBook.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGridBook.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DataGridBook.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DataGridBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridBook.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.BookID,
             this.Col1,
             this.Col2,
             this.col3,
@@ -74,8 +76,8 @@ namespace Visual_Perpus
             this.col6});
             this.DataGridBook.DoubleBuffered = true;
             this.DataGridBook.EnableHeadersVisualStyles = false;
-            this.DataGridBook.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.DataGridBook.HeaderForeColor = System.Drawing.Color.SeaGreen;
+            this.DataGridBook.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.DataGridBook.HeaderForeColor = System.Drawing.Color.Black;
             this.DataGridBook.Location = new System.Drawing.Point(36, 172);
             this.DataGridBook.Name = "DataGridBook";
             this.DataGridBook.ReadOnly = true;
@@ -84,6 +86,7 @@ namespace Visual_Perpus
             this.DataGridBook.RowTemplate.Height = 24;
             this.DataGridBook.Size = new System.Drawing.Size(944, 452);
             this.DataGridBook.TabIndex = 19;
+            this.DataGridBook.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridBook_CellContentClick);
             // 
             // bunifuThinButton21
             // 
@@ -190,6 +193,14 @@ namespace Visual_Perpus
             this.bunifuThinButton23.TabIndex = 21;
             this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // BookID
+            // 
+            this.BookID.HeaderText = "BookID";
+            this.BookID.MinimumWidth = 6;
+            this.BookID.Name = "BookID";
+            this.BookID.ReadOnly = true;
+            this.BookID.Width = 125;
+            // 
             // Col1
             // 
             this.Col1.HeaderText = "Title";
@@ -266,6 +277,7 @@ namespace Visual_Perpus
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuThinButton2 BtnAddBook;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BookID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Col1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Col2;
         private System.Windows.Forms.DataGridViewTextBoxColumn col3;

@@ -36,11 +36,13 @@ namespace Visual_Perpus
             MySqlDataReader reader = command.ExecuteReader();
             DataGridMember.Rows.Clear();
             DataGridMember.Columns.Clear();
-            DataGridMember.Columns.Add("userCol", "USERNAME");
-            DataGridMember.Columns.Add("passCol", "PASSWORD");
+            DataGridMember.Columns.Add("Col1", "Username");
+            DataGridMember.Columns.Add("Col2", "NIM");
+            DataGridMember.Columns.Add("Col3", "FirstName");
+            DataGridMember.Columns.Add("Col4", "LastName");
             while (reader.Read())
             {
-                DataGridMember.Rows.Add(reader.GetString(1), reader.GetString(2));
+                DataGridMember.Rows.Add(reader.GetString(3), reader.GetString(2), reader.GetString(5), reader.GetString(6));
             }
             con.Close();
         }
