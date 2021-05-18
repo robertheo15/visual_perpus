@@ -33,11 +33,6 @@ namespace Visual_Perpus
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Databukuadmin));
             this.DataGridBook = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.BtnAddBook = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.BookID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Col1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Col2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,6 +40,11 @@ namespace Visual_Perpus
             this.col4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.BtnAddBook = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridBook)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,6 +87,62 @@ namespace Visual_Perpus
             this.DataGridBook.Size = new System.Drawing.Size(944, 452);
             this.DataGridBook.TabIndex = 19;
             this.DataGridBook.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridBook_CellContentClick);
+            // 
+            // BookID
+            // 
+            this.BookID.HeaderText = "BookID";
+            this.BookID.MinimumWidth = 6;
+            this.BookID.Name = "BookID";
+            this.BookID.ReadOnly = true;
+            this.BookID.Width = 125;
+            // 
+            // Col1
+            // 
+            this.Col1.HeaderText = "Title";
+            this.Col1.MinimumWidth = 6;
+            this.Col1.Name = "Col1";
+            this.Col1.ReadOnly = true;
+            this.Col1.Width = 125;
+            // 
+            // Col2
+            // 
+            this.Col2.HeaderText = "author";
+            this.Col2.MinimumWidth = 6;
+            this.Col2.Name = "Col2";
+            this.Col2.ReadOnly = true;
+            this.Col2.Width = 125;
+            // 
+            // col3
+            // 
+            this.col3.HeaderText = "year";
+            this.col3.MinimumWidth = 6;
+            this.col3.Name = "col3";
+            this.col3.ReadOnly = true;
+            this.col3.Width = 125;
+            // 
+            // col4
+            // 
+            this.col4.HeaderText = "quantity";
+            this.col4.MinimumWidth = 6;
+            this.col4.Name = "col4";
+            this.col4.ReadOnly = true;
+            this.col4.Width = 125;
+            // 
+            // col5
+            // 
+            this.col5.HeaderText = "type";
+            this.col5.MinimumWidth = 6;
+            this.col5.Name = "col5";
+            this.col5.ReadOnly = true;
+            this.col5.Width = 125;
+            // 
+            // col6
+            // 
+            this.col6.HeaderText = "price";
+            this.col6.MinimumWidth = 6;
+            this.col6.Name = "col6";
+            this.col6.ReadOnly = true;
+            this.col6.Width = 125;
             // 
             // bunifuThinButton21
             // 
@@ -192,62 +248,7 @@ namespace Visual_Perpus
             this.bunifuThinButton23.Size = new System.Drawing.Size(132, 41);
             this.bunifuThinButton23.TabIndex = 21;
             this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // BookID
-            // 
-            this.BookID.HeaderText = "BookID";
-            this.BookID.MinimumWidth = 6;
-            this.BookID.Name = "BookID";
-            this.BookID.ReadOnly = true;
-            this.BookID.Width = 125;
-            // 
-            // Col1
-            // 
-            this.Col1.HeaderText = "Title";
-            this.Col1.MinimumWidth = 6;
-            this.Col1.Name = "Col1";
-            this.Col1.ReadOnly = true;
-            this.Col1.Width = 125;
-            // 
-            // Col2
-            // 
-            this.Col2.HeaderText = "author";
-            this.Col2.MinimumWidth = 6;
-            this.Col2.Name = "Col2";
-            this.Col2.ReadOnly = true;
-            this.Col2.Width = 125;
-            // 
-            // col3
-            // 
-            this.col3.HeaderText = "year";
-            this.col3.MinimumWidth = 6;
-            this.col3.Name = "col3";
-            this.col3.ReadOnly = true;
-            this.col3.Width = 125;
-            // 
-            // col4
-            // 
-            this.col4.HeaderText = "quantity";
-            this.col4.MinimumWidth = 6;
-            this.col4.Name = "col4";
-            this.col4.ReadOnly = true;
-            this.col4.Width = 125;
-            // 
-            // col5
-            // 
-            this.col5.HeaderText = "type";
-            this.col5.MinimumWidth = 6;
-            this.col5.Name = "col5";
-            this.col5.ReadOnly = true;
-            this.col5.Width = 125;
-            // 
-            // col6
-            // 
-            this.col6.HeaderText = "price";
-            this.col6.MinimumWidth = 6;
-            this.col6.Name = "col6";
-            this.col6.ReadOnly = true;
-            this.col6.Width = 125;
+            this.bunifuThinButton23.Click += new System.EventHandler(this.BtnDeleteBook_Click);
             // 
             // Databukuadmin
             // 

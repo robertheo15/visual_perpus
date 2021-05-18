@@ -54,10 +54,10 @@ namespace Visual_Perpus
 
         }
          // delete
-        private void bunifuThinButton23_Click(object sender, EventArgs e)
+
+        private void BtnDeleteBook_Click(object sender, EventArgs e)
         {
-            
-           MySqlConnection con = new MySqlConnection(connStr);
+            MySqlConnection con = new MySqlConnection(connStr);
             con.Open();
             MySqlCommand command = con.CreateCommand();
             command.Parameters.AddWithValue("@judul_buku", bunifuMaterialTextbox1.Text);
