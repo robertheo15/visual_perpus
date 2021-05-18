@@ -17,12 +17,41 @@ namespace Visual_Perpus
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void peminjaman_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void peminjaman_Load(object sender, EventArgs e)
+        private void LabelError_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnSearchPeminjaman_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void BtnPinjamBuku_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LabelNimPeminjaman_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LabelIdBookPeminjaman_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtBoxErrorNim_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtBoxErrorBook_TextChanged(object sender, EventArgs e)
         {
 
         }

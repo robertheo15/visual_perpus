@@ -34,21 +34,19 @@ namespace Visual_Perpus
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.TxtBoxNimPeminjaman = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.BtnSearchPeminjaman = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.BtnPinjamBuku = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.TxtBoxIdBookPeminjaman = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label13 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.TxtBoxErrorNim = new System.Windows.Forms.TextBox();
+            this.TxtBoxErrorBook = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -61,7 +59,6 @@ namespace Visual_Perpus
             this.label1.Size = new System.Drawing.Size(85, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "NIM :";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -72,50 +69,52 @@ namespace Visual_Perpus
             this.label2.TabIndex = 1;
             this.label2.Text = "PEMINJAMAN";
             // 
-            // bunifuMaterialTextbox1
+            // TxtBoxNimPeminjaman
             // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(145, 105);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(370, 44);
-            this.bunifuMaterialTextbox1.TabIndex = 2;
-            this.bunifuMaterialTextbox1.Text = "Insert NIM here";
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtBoxNimPeminjaman.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtBoxNimPeminjaman.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.TxtBoxNimPeminjaman.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TxtBoxNimPeminjaman.HintForeColor = System.Drawing.Color.Empty;
+            this.TxtBoxNimPeminjaman.HintText = "";
+            this.TxtBoxNimPeminjaman.isPassword = false;
+            this.TxtBoxNimPeminjaman.LineFocusedColor = System.Drawing.Color.DarkTurquoise;
+            this.TxtBoxNimPeminjaman.LineIdleColor = System.Drawing.Color.Gray;
+            this.TxtBoxNimPeminjaman.LineMouseHoverColor = System.Drawing.Color.DarkTurquoise;
+            this.TxtBoxNimPeminjaman.LineThickness = 3;
+            this.TxtBoxNimPeminjaman.Location = new System.Drawing.Point(145, 105);
+            this.TxtBoxNimPeminjaman.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtBoxNimPeminjaman.Name = "TxtBoxNimPeminjaman";
+            this.TxtBoxNimPeminjaman.Size = new System.Drawing.Size(370, 44);
+            this.TxtBoxNimPeminjaman.TabIndex = 2;
+            this.TxtBoxNimPeminjaman.Text = "Insert NIM here";
+            this.TxtBoxNimPeminjaman.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtBoxNimPeminjaman.OnValueChanged += new System.EventHandler(this.LabelNimPeminjaman_OnValueChanged);
             // 
-            // bunifuThinButton21
+            // BtnSearchPeminjaman
             // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "CARI";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.Black;
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(524, 117);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(202, 41);
-            this.bunifuThinButton21.TabIndex = 3;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnSearchPeminjaman.ActiveBorderThickness = 1;
+            this.BtnSearchPeminjaman.ActiveCornerRadius = 20;
+            this.BtnSearchPeminjaman.ActiveFillColor = System.Drawing.Color.DarkTurquoise;
+            this.BtnSearchPeminjaman.ActiveForecolor = System.Drawing.Color.White;
+            this.BtnSearchPeminjaman.ActiveLineColor = System.Drawing.Color.DarkTurquoise;
+            this.BtnSearchPeminjaman.BackColor = System.Drawing.Color.White;
+            this.BtnSearchPeminjaman.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnSearchPeminjaman.BackgroundImage")));
+            this.BtnSearchPeminjaman.ButtonText = "CARI";
+            this.BtnSearchPeminjaman.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSearchPeminjaman.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSearchPeminjaman.ForeColor = System.Drawing.Color.Black;
+            this.BtnSearchPeminjaman.IdleBorderThickness = 1;
+            this.BtnSearchPeminjaman.IdleCornerRadius = 20;
+            this.BtnSearchPeminjaman.IdleFillColor = System.Drawing.Color.White;
+            this.BtnSearchPeminjaman.IdleForecolor = System.Drawing.Color.DarkTurquoise;
+            this.BtnSearchPeminjaman.IdleLineColor = System.Drawing.Color.DarkTurquoise;
+            this.BtnSearchPeminjaman.Location = new System.Drawing.Point(524, 117);
+            this.BtnSearchPeminjaman.Margin = new System.Windows.Forms.Padding(5);
+            this.BtnSearchPeminjaman.Name = "BtnSearchPeminjaman";
+            this.BtnSearchPeminjaman.Size = new System.Drawing.Size(202, 41);
+            this.BtnSearchPeminjaman.TabIndex = 3;
+            this.BtnSearchPeminjaman.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnSearchPeminjaman.Click += new System.EventHandler(this.BtnSearchPeminjaman_Click);
             // 
             // label3
             // 
@@ -157,46 +156,6 @@ namespace Visual_Perpus
             this.label7.TabIndex = 8;
             this.label7.Text = "Maksimal Lama Peminjaman :";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label8.Location = new System.Drawing.Point(137, 24);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(29, 29);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "--";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label9.Location = new System.Drawing.Point(137, 62);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(29, 29);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "--";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label11.Location = new System.Drawing.Point(808, 28);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(29, 29);
-            this.label11.TabIndex = 12;
-            this.label11.Text = "--";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label12.Location = new System.Drawing.Point(808, 66);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(29, 29);
-            this.label12.TabIndex = 13;
-            this.label12.Text = "--";
-            // 
             // bunifuCustomDataGrid1
             // 
             this.bunifuCustomDataGrid1.AllowUserToAddRows = false;
@@ -228,50 +187,52 @@ namespace Visual_Perpus
             this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(1007, 158);
             this.bunifuCustomDataGrid1.TabIndex = 14;
             // 
-            // bunifuThinButton22
+            // BtnPinjamBuku
             // 
-            this.bunifuThinButton22.ActiveBorderThickness = 1;
-            this.bunifuThinButton22.ActiveCornerRadius = 20;
-            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton22.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "PINJAM";
-            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton22.ForeColor = System.Drawing.Color.Black;
-            this.bunifuThinButton22.IdleBorderThickness = 1;
-            this.bunifuThinButton22.IdleCornerRadius = 20;
-            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(615, 346);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(202, 41);
-            this.bunifuThinButton22.TabIndex = 17;
-            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnPinjamBuku.ActiveBorderThickness = 1;
+            this.BtnPinjamBuku.ActiveCornerRadius = 20;
+            this.BtnPinjamBuku.ActiveFillColor = System.Drawing.Color.DarkTurquoise;
+            this.BtnPinjamBuku.ActiveForecolor = System.Drawing.Color.White;
+            this.BtnPinjamBuku.ActiveLineColor = System.Drawing.Color.DarkTurquoise;
+            this.BtnPinjamBuku.BackColor = System.Drawing.Color.White;
+            this.BtnPinjamBuku.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnPinjamBuku.BackgroundImage")));
+            this.BtnPinjamBuku.ButtonText = "PINJAM";
+            this.BtnPinjamBuku.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnPinjamBuku.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPinjamBuku.ForeColor = System.Drawing.Color.Black;
+            this.BtnPinjamBuku.IdleBorderThickness = 1;
+            this.BtnPinjamBuku.IdleCornerRadius = 20;
+            this.BtnPinjamBuku.IdleFillColor = System.Drawing.Color.White;
+            this.BtnPinjamBuku.IdleForecolor = System.Drawing.Color.DarkTurquoise;
+            this.BtnPinjamBuku.IdleLineColor = System.Drawing.Color.DarkTurquoise;
+            this.BtnPinjamBuku.Location = new System.Drawing.Point(615, 346);
+            this.BtnPinjamBuku.Margin = new System.Windows.Forms.Padding(5);
+            this.BtnPinjamBuku.Name = "BtnPinjamBuku";
+            this.BtnPinjamBuku.Size = new System.Drawing.Size(202, 41);
+            this.BtnPinjamBuku.TabIndex = 17;
+            this.BtnPinjamBuku.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnPinjamBuku.Click += new System.EventHandler(this.BtnPinjamBuku_Click);
             // 
-            // bunifuMaterialTextbox2
+            // TxtBoxIdBookPeminjaman
             // 
-            this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox2.HintText = "";
-            this.bunifuMaterialTextbox2.isPassword = false;
-            this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuMaterialTextbox2.LineThickness = 3;
-            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(236, 339);
-            this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
-            this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(370, 44);
-            this.bunifuMaterialTextbox2.TabIndex = 16;
-            this.bunifuMaterialTextbox2.Text = "Insert Book ID Here";
-            this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtBoxIdBookPeminjaman.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtBoxIdBookPeminjaman.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.TxtBoxIdBookPeminjaman.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TxtBoxIdBookPeminjaman.HintForeColor = System.Drawing.Color.Empty;
+            this.TxtBoxIdBookPeminjaman.HintText = "";
+            this.TxtBoxIdBookPeminjaman.isPassword = false;
+            this.TxtBoxIdBookPeminjaman.LineFocusedColor = System.Drawing.Color.DarkTurquoise;
+            this.TxtBoxIdBookPeminjaman.LineIdleColor = System.Drawing.Color.Gray;
+            this.TxtBoxIdBookPeminjaman.LineMouseHoverColor = System.Drawing.Color.DarkTurquoise;
+            this.TxtBoxIdBookPeminjaman.LineThickness = 3;
+            this.TxtBoxIdBookPeminjaman.Location = new System.Drawing.Point(236, 339);
+            this.TxtBoxIdBookPeminjaman.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtBoxIdBookPeminjaman.Name = "TxtBoxIdBookPeminjaman";
+            this.TxtBoxIdBookPeminjaman.Size = new System.Drawing.Size(370, 44);
+            this.TxtBoxIdBookPeminjaman.TabIndex = 16;
+            this.TxtBoxIdBookPeminjaman.Text = "Insert Book ID Here";
+            this.TxtBoxIdBookPeminjaman.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TxtBoxIdBookPeminjaman.OnValueChanged += new System.EventHandler(this.LabelIdBookPeminjaman_OnValueChanged);
             // 
             // label13
             // 
@@ -287,10 +248,6 @@ namespace Visual_Perpus
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Location = new System.Drawing.Point(58, 180);
@@ -298,18 +255,40 @@ namespace Visual_Perpus
             this.panel1.Size = new System.Drawing.Size(1007, 152);
             this.panel1.TabIndex = 18;
             // 
+            // TxtBoxErrorNim
+            // 
+            this.TxtBoxErrorNim.Location = new System.Drawing.Point(892, 124);
+            this.TxtBoxErrorNim.Multiline = true;
+            this.TxtBoxErrorNim.Name = "TxtBoxErrorNim";
+            this.TxtBoxErrorNim.ReadOnly = true;
+            this.TxtBoxErrorNim.Size = new System.Drawing.Size(173, 34);
+            this.TxtBoxErrorNim.TabIndex = 20;
+            this.TxtBoxErrorNim.TextChanged += new System.EventHandler(this.TxtBoxErrorNim_TextChanged);
+            // 
+            // TxtBoxErrorBook
+            // 
+            this.TxtBoxErrorBook.Location = new System.Drawing.Point(892, 350);
+            this.TxtBoxErrorBook.Multiline = true;
+            this.TxtBoxErrorBook.Name = "TxtBoxErrorBook";
+            this.TxtBoxErrorBook.ReadOnly = true;
+            this.TxtBoxErrorBook.Size = new System.Drawing.Size(173, 34);
+            this.TxtBoxErrorBook.TabIndex = 21;
+            this.TxtBoxErrorBook.TextChanged += new System.EventHandler(this.TxtBoxErrorBook_TextChanged);
+            // 
             // Peminjaman
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1130, 677);
-            this.Controls.Add(this.bunifuThinButton22);
-            this.Controls.Add(this.bunifuMaterialTextbox2);
+            this.Controls.Add(this.TxtBoxErrorBook);
+            this.Controls.Add(this.TxtBoxErrorNim);
+            this.Controls.Add(this.BtnPinjamBuku);
+            this.Controls.Add(this.TxtBoxIdBookPeminjaman);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.bunifuCustomDataGrid1);
-            this.Controls.Add(this.bunifuThinButton21);
-            this.Controls.Add(this.bunifuMaterialTextbox1);
+            this.Controls.Add(this.BtnSearchPeminjaman);
+            this.Controls.Add(this.TxtBoxNimPeminjaman);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
@@ -321,6 +300,7 @@ namespace Visual_Perpus
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -328,20 +308,18 @@ namespace Visual_Perpus
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox TxtBoxNimPeminjaman;
+        private Bunifu.Framework.UI.BunifuThinButton2 BtnSearchPeminjaman;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
+        private Bunifu.Framework.UI.BunifuThinButton2 BtnPinjamBuku;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox TxtBoxIdBookPeminjaman;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox TxtBoxErrorNim;
+        private System.Windows.Forms.TextBox TxtBoxErrorBook;
     }
 }
