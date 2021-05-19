@@ -46,26 +46,64 @@ namespace Visual_Perpus
                 command1.Parameters.AddWithValue("@nim", TxtBoxNimPeminjaman.Text);
                 command1.CommandText = "Select * FROM `users` WHERE nim  = @nim";
                 MySqlDataReader reader1 = command1.ExecuteReader();
-                TxtBoxErrorNim.Text = "Data ditemukan";
+                LabelErrorNim.Text = "Data ditemukan";
 
                 while (reader1.Read())
-                { 
-                    TextBoxNim.Text = reader.GetString(2);
-                    TextBoxName.Text = reader.GetString(5) + ' '+ reader.GetString(5);
+                {
+                    LabelNim.Text = reader.GetString(2);
+                    LabelName.Text = reader.GetString(5) + ' '+ reader.GetString(5);
                 }
 
 
                 con1.Close();
             }
             else
-            {               
-                TxtBoxErrorNim.Text = "Data tidak ada";
+            {
+                LabelErrorNim.Text = "Data tidak ada";
             }
 
             con.Close();
         }
         private void BtnPinjamBuku_Click(object sender, EventArgs e)
         {
+            if (!string.IsNullOrEmpty(TxtBoxIdBookPeminjaman.Text))
+            {
+                LabelErrorBook.Text = "Id Book belum di isi";
+            }
+            if (!string.IsNullOrEmpty(TxtBoxNimPeminjaman.Text))
+            {
+                LabelErrorNim.Text = "Nim Belum Di isi";
+            }
+            if (!String.IsNullOrEmpty(TxtBoxNimPeminjaman.Text) && !String.IsNullOrEmpty(TxtBoxIdBookPeminjaman.Text))
+            {
+                LabelErrorBook.Text = "Peminjaman berhasil";
+                LabelErrorNim.Text = "Peminjaman berhasil";
+
+                DateTime localdate = DateTime.Now;
+                Database db = new Database();
+                MySqlCommand cmd = new MySqlCommand("INSERT INTO `order_detail` (`id_book`, `id_user`,`date_from`, `date_return`,`date_to`,`status`)VALUES (@idBook, @idUser,  @dateFrom ,@dateReturn, @dateTo, @status)", db.GetConnection());
+                cmd.Parameters.Add("@idBook", MySqlDbType.Int32).Value = TxtBoxIdBookPeminjaman.Text;
+                cmd.Parameters.Add("@idUser", MySqlDbType.Int32).Value = TxtBoxNimPeminjaman.Text;
+                cmd.Parameters.Add("@dateFrom", MySqlDbType.Timestamp).Value = localdate;
+                cmd.Parameters.Add("@dateReturn", MySqlDbType.VarChar).Value = "";
+                cmd.Parameters.Add("@dateTo", MySqlDbType.Timestamp).Value = localdate.AddDays(7);
+                cmd.Parameters.Add("@status", MySqlDbType.VarChar).Value = '0';
+
+                db.OpenConnection();
+                // execute the query
+                if (cmd.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("Your order Has Been Created", "order succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("ERROR");
+                }
+
+
+                db.CloseConnection();
+
+            }
 
         }
 
@@ -86,19 +124,19 @@ namespace Visual_Perpus
                 command1.Parameters.AddWithValue("@idBook", TxtBoxIdBookPeminjaman.Text);
                 command1.CommandText = "Select * FROM `books` WHERE id_book  = @idBook";
                 MySqlDataReader reader1 = command1.ExecuteReader();
-                TxtBoxErrorBook.Text = "Data ditemukan";
+                LabelErrorBook.Text = "Data ditemukan";
 
                 while (reader1.Read())
                 {
-                    TextBoxIdBook.Text = reader.GetString(0);
-                    TextBoxTitleBook.Text = reader.GetString(3);
+                    LabelIdBook.Text = reader.GetString(0);
+                    LabelTitleBook.Text = reader.GetString(3);
                 }
 
                 con1.Close();
             }
             else
             {
-                TxtBoxErrorBook.Text = "Data tidak ada";
+                LabelErrorBook.Text = "Data tidak ada";
             }
 
             con.Close();

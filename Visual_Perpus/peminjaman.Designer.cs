@@ -43,19 +43,19 @@ namespace Visual_Perpus
             this.TxtBoxIdBookPeminjaman = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label13 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.TextBoxName = new System.Windows.Forms.TextBox();
-            this.TextBoxNim = new System.Windows.Forms.TextBox();
-            this.TxtBoxErrorNim = new System.Windows.Forms.TextBox();
-            this.TxtBoxErrorBook = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.TextBoxIdBook = new System.Windows.Forms.TextBox();
-            this.TextBoxTitleBook = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
             this.BtnSearchBook = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.LabelErrorNim = new System.Windows.Forms.Label();
+            this.LabelNim = new System.Windows.Forms.Label();
+            this.LabelName = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.LabelIdBook = new System.Windows.Forms.Label();
+            this.LabelTitleBook = new System.Windows.Forms.Label();
+            this.LabelErrorBook = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -95,7 +95,6 @@ namespace Visual_Perpus
             this.TxtBoxNimPeminjaman.Name = "TxtBoxNimPeminjaman";
             this.TxtBoxNimPeminjaman.Size = new System.Drawing.Size(370, 44);
             this.TxtBoxNimPeminjaman.TabIndex = 2;
-            this.TxtBoxNimPeminjaman.Text = "Insert NIM here";
             this.TxtBoxNimPeminjaman.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // BtnSearchPeminjaman
@@ -218,7 +217,6 @@ namespace Visual_Perpus
             this.TxtBoxIdBookPeminjaman.Name = "TxtBoxIdBookPeminjaman";
             this.TxtBoxIdBookPeminjaman.Size = new System.Drawing.Size(283, 44);
             this.TxtBoxIdBookPeminjaman.TabIndex = 16;
-            this.TxtBoxIdBookPeminjaman.Text = "Insert Book ID Here";
             this.TxtBoxIdBookPeminjaman.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label13
@@ -233,50 +231,14 @@ namespace Visual_Perpus
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel1.Controls.Add(this.TextBoxName);
-            this.panel1.Controls.Add(this.TextBoxNim);
+            this.panel1.Controls.Add(this.LabelName);
+            this.panel1.Controls.Add(this.LabelNim);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Location = new System.Drawing.Point(58, 180);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1007, 152);
             this.panel1.TabIndex = 18;
-            // 
-            // TextBoxName
-            // 
-            this.TextBoxName.Location = new System.Drawing.Point(574, 19);
-            this.TextBoxName.Multiline = true;
-            this.TextBoxName.Name = "TextBoxName";
-            this.TextBoxName.ReadOnly = true;
-            this.TextBoxName.Size = new System.Drawing.Size(173, 34);
-            this.TextBoxName.TabIndex = 23;
-            // 
-            // TextBoxNim
-            // 
-            this.TextBoxNim.Location = new System.Drawing.Point(117, 19);
-            this.TextBoxNim.Multiline = true;
-            this.TextBoxNim.Name = "TextBoxNim";
-            this.TextBoxNim.ReadOnly = true;
-            this.TextBoxNim.Size = new System.Drawing.Size(173, 34);
-            this.TextBoxNim.TabIndex = 22;
-            // 
-            // TxtBoxErrorNim
-            // 
-            this.TxtBoxErrorNim.Location = new System.Drawing.Point(892, 124);
-            this.TxtBoxErrorNim.Multiline = true;
-            this.TxtBoxErrorNim.Name = "TxtBoxErrorNim";
-            this.TxtBoxErrorNim.ReadOnly = true;
-            this.TxtBoxErrorNim.Size = new System.Drawing.Size(173, 34);
-            this.TxtBoxErrorNim.TabIndex = 20;
-            // 
-            // TxtBoxErrorBook
-            // 
-            this.TxtBoxErrorBook.Location = new System.Drawing.Point(892, 350);
-            this.TxtBoxErrorBook.Multiline = true;
-            this.TxtBoxErrorBook.Name = "TxtBoxErrorBook";
-            this.TxtBoxErrorBook.ReadOnly = true;
-            this.TxtBoxErrorBook.Size = new System.Drawing.Size(173, 34);
-            this.TxtBoxErrorBook.TabIndex = 21;
             // 
             // label5
             // 
@@ -322,44 +284,6 @@ namespace Visual_Perpus
             this.label10.TabIndex = 11;
             this.label10.Text = "Maksimal Peminjaman Buku :";
             // 
-            // TextBoxIdBook
-            // 
-            this.TextBoxIdBook.Location = new System.Drawing.Point(175, 428);
-            this.TextBoxIdBook.Multiline = true;
-            this.TextBoxIdBook.Name = "TextBoxIdBook";
-            this.TextBoxIdBook.ReadOnly = true;
-            this.TextBoxIdBook.Size = new System.Drawing.Size(173, 34);
-            this.TextBoxIdBook.TabIndex = 26;
-            // 
-            // TextBoxTitleBook
-            // 
-            this.TextBoxTitleBook.Location = new System.Drawing.Point(175, 468);
-            this.TextBoxTitleBook.Multiline = true;
-            this.TextBoxTitleBook.Name = "TextBoxTitleBook";
-            this.TextBoxTitleBook.ReadOnly = true;
-            this.TextBoxTitleBook.Size = new System.Drawing.Size(173, 34);
-            this.TextBoxTitleBook.TabIndex = 27;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(857, 428);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(173, 34);
-            this.textBox7.TabIndex = 28;
-            this.textBox7.Text = "7 Hari";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(857, 468);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(173, 34);
-            this.textBox8.TabIndex = 29;
-            this.textBox8.Text = "7 Hari";
-            // 
             // BtnSearchBook
             // 
             this.BtnSearchBook.ActiveBorderThickness = 1;
@@ -386,22 +310,106 @@ namespace Visual_Perpus
             this.BtnSearchBook.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BtnSearchBook.Click += new System.EventHandler(this.BtnSearchBook_Click);
             // 
+            // LabelErrorNim
+            // 
+            this.LabelErrorNim.AutoSize = true;
+            this.LabelErrorNim.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.LabelErrorNim.Location = new System.Drawing.Point(928, 121);
+            this.LabelErrorNim.Name = "LabelErrorNim";
+            this.LabelErrorNim.Size = new System.Drawing.Size(29, 29);
+            this.LabelErrorNim.TabIndex = 32;
+            this.LabelErrorNim.Text = "--";
+            // 
+            // LabelNim
+            // 
+            this.LabelNim.AutoSize = true;
+            this.LabelNim.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.LabelNim.Location = new System.Drawing.Point(124, 28);
+            this.LabelNim.Name = "LabelNim";
+            this.LabelNim.Size = new System.Drawing.Size(29, 29);
+            this.LabelNim.TabIndex = 33;
+            this.LabelNim.Text = "--";
+            // 
+            // LabelName
+            // 
+            this.LabelName.AutoSize = true;
+            this.LabelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.LabelName.Location = new System.Drawing.Point(590, 28);
+            this.LabelName.Name = "LabelName";
+            this.LabelName.Size = new System.Drawing.Size(29, 29);
+            this.LabelName.TabIndex = 34;
+            this.LabelName.Text = "--";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label6.Location = new System.Drawing.Point(896, 433);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(76, 29);
+            this.label6.TabIndex = 35;
+            this.label6.Text = "7 hari";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label7.Location = new System.Drawing.Point(896, 475);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(80, 29);
+            this.label7.TabIndex = 36;
+            this.label7.Text = "7 Hari";
+            // 
+            // LabelIdBook
+            // 
+            this.LabelIdBook.AutoSize = true;
+            this.LabelIdBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.LabelIdBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.LabelIdBook.Location = new System.Drawing.Point(209, 437);
+            this.LabelIdBook.Name = "LabelIdBook";
+            this.LabelIdBook.Size = new System.Drawing.Size(29, 29);
+            this.LabelIdBook.TabIndex = 35;
+            this.LabelIdBook.Text = "--";
+            // 
+            // LabelTitleBook
+            // 
+            this.LabelTitleBook.AutoSize = true;
+            this.LabelTitleBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.LabelTitleBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.LabelTitleBook.Location = new System.Drawing.Point(212, 475);
+            this.LabelTitleBook.Name = "LabelTitleBook";
+            this.LabelTitleBook.Size = new System.Drawing.Size(29, 29);
+            this.LabelTitleBook.TabIndex = 37;
+            this.LabelTitleBook.Text = "--";
+            // 
+            // LabelErrorBook
+            // 
+            this.LabelErrorBook.AutoSize = true;
+            this.LabelErrorBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.LabelErrorBook.Location = new System.Drawing.Point(930, 358);
+            this.LabelErrorBook.Name = "LabelErrorBook";
+            this.LabelErrorBook.Size = new System.Drawing.Size(29, 29);
+            this.LabelErrorBook.TabIndex = 38;
+            this.LabelErrorBook.Text = "--";
+            // 
             // Peminjaman
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1130, 677);
+            this.Controls.Add(this.LabelErrorBook);
+            this.Controls.Add(this.LabelTitleBook);
+            this.Controls.Add(this.LabelIdBook);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.LabelErrorNim);
             this.Controls.Add(this.BtnSearchBook);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.TextBoxTitleBook);
-            this.Controls.Add(this.TextBoxIdBook);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.TxtBoxErrorBook);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.TxtBoxErrorNim);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.BtnPinjamBuku);
             this.Controls.Add(this.TxtBoxIdBookPeminjaman);
@@ -437,18 +445,18 @@ namespace Visual_Perpus
         private Bunifu.Framework.UI.BunifuMaterialTextbox TxtBoxIdBookPeminjaman;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox TxtBoxErrorNim;
-        private System.Windows.Forms.TextBox TxtBoxErrorBook;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox TextBoxName;
-        private System.Windows.Forms.TextBox TextBoxNim;
-        private System.Windows.Forms.TextBox TextBoxIdBook;
-        private System.Windows.Forms.TextBox TextBoxTitleBook;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
         private Bunifu.Framework.UI.BunifuThinButton2 BtnSearchBook;
+        private System.Windows.Forms.Label LabelName;
+        private System.Windows.Forms.Label LabelNim;
+        private System.Windows.Forms.Label LabelErrorNim;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label LabelIdBook;
+        private System.Windows.Forms.Label LabelTitleBook;
+        private System.Windows.Forms.Label LabelErrorBook;
     }
 }
