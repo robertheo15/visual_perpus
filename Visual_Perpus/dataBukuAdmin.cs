@@ -79,5 +79,36 @@ namespace Visual_Perpus
                 MessageBox.Show("Data tidak ada");
             }
         }
+
+        private void btnSearchBook_Click(object sender, EventArgs e)
+        {
+            MySqlConnection con = new MySqlConnection(connStr);
+            con.Open();
+            MySqlCommand command = con.CreateCommand();
+            command.Parameters.AddWithValue("@search", bunifuMaterialTextbox1.Text);
+            command.CommandText = "Select * FROM `books` WHERE  id_book or title_book  = @search ";
+            MySqlDataReader reader = command.ExecuteReader();
+
+            if (reader.Read())
+            {
+
+                DataGridBook.Rows.Clear();
+                DataGridBook.Columns.Clear();
+                DataGridBook.Refresh();
+                DataGridBook.Columns.Add("Col1", "Book ID");
+                DataGridBook.Columns.Add("Col2", "Title");
+                DataGridBook.Columns.Add("Col3", "Author");
+                DataGridBook.Columns.Add("Col4", "Year");
+                DataGridBook.Columns.Add("Col5", "Qty");
+                DataGridBook.Columns.Add("Col6", "Type");
+                DataGridBook.Columns.Add("Col7", "Price");
+                DataGridBook.Rows.Add(reader.GetString(0), reader.GetString(3), reader.GetString(4), reader.GetString(5), reader.GetString(6), reader.GetString(7), reader.GetString(8));
+
+            }
+            else
+            {
+                MessageBox.Show("Data tidak ada");
+            }
+        }
     }
 }

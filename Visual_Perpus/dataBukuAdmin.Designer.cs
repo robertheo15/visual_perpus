@@ -78,13 +78,14 @@ namespace Visual_Perpus
             this.DataGridBook.EnableHeadersVisualStyles = false;
             this.DataGridBook.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.DataGridBook.HeaderForeColor = System.Drawing.Color.Black;
-            this.DataGridBook.Location = new System.Drawing.Point(36, 172);
+            this.DataGridBook.Location = new System.Drawing.Point(27, 140);
+            this.DataGridBook.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DataGridBook.Name = "DataGridBook";
             this.DataGridBook.ReadOnly = true;
             this.DataGridBook.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DataGridBook.RowHeadersWidth = 51;
             this.DataGridBook.RowTemplate.Height = 24;
-            this.DataGridBook.Size = new System.Drawing.Size(944, 452);
+            this.DataGridBook.Size = new System.Drawing.Size(708, 367);
             this.DataGridBook.TabIndex = 19;
             this.DataGridBook.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridBook_CellContentClick);
             // 
@@ -162,12 +163,13 @@ namespace Visual_Perpus
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.DarkTurquoise;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(415, 112);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(311, 91);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(202, 41);
+            this.bunifuThinButton21.Size = new System.Drawing.Size(152, 33);
             this.bunifuThinButton21.TabIndex = 18;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.btnSearchBook_Click);
             // 
             // bunifuMaterialTextbox1
             // 
@@ -181,10 +183,9 @@ namespace Visual_Perpus
             this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
             this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.DarkTurquoise;
             this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(36, 100);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(27, 81);
             this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(370, 44);
+            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(278, 36);
             this.bunifuMaterialTextbox1.TabIndex = 17;
             this.bunifuMaterialTextbox1.Text = "Search Book";
             this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -192,9 +193,10 @@ namespace Visual_Perpus
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.label2.Location = new System.Drawing.Point(30, 34);
+            this.label2.Location = new System.Drawing.Point(22, 28);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1029, 52);
+            this.label2.Size = new System.Drawing.Size(772, 42);
             this.label2.TabIndex = 16;
             this.label2.Text = "DAFTAR BUKU";
             // 
@@ -216,10 +218,10 @@ namespace Visual_Perpus
             this.BtnAddBook.IdleFillColor = System.Drawing.Color.White;
             this.BtnAddBook.IdleForecolor = System.Drawing.Color.SpringGreen;
             this.BtnAddBook.IdleLineColor = System.Drawing.Color.SpringGreen;
-            this.BtnAddBook.Location = new System.Drawing.Point(697, 112);
-            this.BtnAddBook.Margin = new System.Windows.Forms.Padding(5);
+            this.BtnAddBook.Location = new System.Drawing.Point(523, 91);
+            this.BtnAddBook.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnAddBook.Name = "BtnAddBook";
-            this.BtnAddBook.Size = new System.Drawing.Size(132, 41);
+            this.BtnAddBook.Size = new System.Drawing.Size(99, 33);
             this.BtnAddBook.TabIndex = 20;
             this.BtnAddBook.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BtnAddBook.Click += new System.EventHandler(this.BtnAddBook_Click);
@@ -242,20 +244,20 @@ namespace Visual_Perpus
             this.bunifuThinButton23.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.Crimson;
             this.bunifuThinButton23.IdleLineColor = System.Drawing.Color.Crimson;
-            this.bunifuThinButton23.Location = new System.Drawing.Point(848, 112);
-            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton23.Location = new System.Drawing.Point(636, 91);
+            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuThinButton23.Name = "bunifuThinButton23";
-            this.bunifuThinButton23.Size = new System.Drawing.Size(132, 41);
+            this.bunifuThinButton23.Size = new System.Drawing.Size(99, 33);
             this.bunifuThinButton23.TabIndex = 21;
             this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton23.Click += new System.EventHandler(this.BtnDeleteBook_Click);
             // 
             // Databukuadmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1197, 684);
+            this.ClientSize = new System.Drawing.Size(898, 556);
             this.Controls.Add(this.bunifuThinButton23);
             this.Controls.Add(this.BtnAddBook);
             this.Controls.Add(this.DataGridBook);
@@ -263,6 +265,7 @@ namespace Visual_Perpus
             this.Controls.Add(this.bunifuMaterialTextbox1);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Databukuadmin";
             this.Text = "dataBukuAdmin";
             ((System.ComponentModel.ISupportInitialize)(this.DataGridBook)).EndInit();
