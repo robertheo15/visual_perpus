@@ -67,6 +67,41 @@ namespace Visual_Perpus
         private void BtnPinjamBuku_Click(object sender, EventArgs e)
         {
 
-        }     
+        }
+
+        private void BtnSearchBook_Click(object sender, EventArgs e)
+        {
+            MySqlConnection con = new MySqlConnection(connStr);
+            con.Open();
+            MySqlCommand command = con.CreateCommand();
+            command.Parameters.AddWithValue("@idBook", TxtBoxIdBookPeminjaman.Text);
+            command.CommandText = "Select * FROM `books` WHERE id_book  = @idBook";
+            MySqlDataReader reader = command.ExecuteReader();
+
+            if (reader.Read())
+            {
+                MySqlConnection con1 = new MySqlConnection(connStr);
+                con1.Open();
+                MySqlCommand command1 = con1.CreateCommand();
+                command1.Parameters.AddWithValue("@idBook", TxtBoxIdBookPeminjaman.Text);
+                command1.CommandText = "Select * FROM `books` WHERE id_book  = @idBook";
+                MySqlDataReader reader1 = command1.ExecuteReader();
+                TxtBoxErrorBook.Text = "Data ditemukan";
+
+                while (reader1.Read())
+                {
+                    TextBoxIdBook.Text = reader.GetString(0);
+                    TextBoxTitleBook.Text = reader.GetString(3);
+                }
+
+                con1.Close();
+            }
+            else
+            {
+                TxtBoxErrorBook.Text = "Data tidak ada";
+            }
+
+            con.Close();
+        }
     }
 }

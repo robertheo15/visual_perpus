@@ -38,15 +38,11 @@ namespace Visual_Perpus
             this.BtnSearchPeminjaman = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.BtnPinjamBuku = new Bunifu.Framework.UI.BunifuThinButton2();
             this.TxtBoxIdBookPeminjaman = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label13 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.TextBoxName = new System.Windows.Forms.TextBox();
             this.TextBoxNim = new System.Windows.Forms.TextBox();
             this.TxtBoxErrorNim = new System.Windows.Forms.TextBox();
@@ -55,11 +51,11 @@ namespace Visual_Perpus
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.TextBoxIdBook = new System.Windows.Forms.TextBox();
+            this.TextBoxTitleBook = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
-            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.BtnSearchBook = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -142,31 +138,11 @@ namespace Visual_Perpus
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label4.Location = new System.Drawing.Point(22, 66);
+            this.label4.Location = new System.Drawing.Point(479, 28);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 25);
             this.label4.TabIndex = 5;
             this.label4.Text = "Nama :";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label6.Location = new System.Drawing.Point(524, 28);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(269, 25);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "Maksimal Peminjaman Buku :";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label7.Location = new System.Drawing.Point(524, 66);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(273, 25);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "Maksimal Lama Peminjaman :";
             // 
             // bunifuCustomDataGrid1
             // 
@@ -257,40 +233,18 @@ namespace Visual_Perpus
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox3);
             this.panel1.Controls.Add(this.TextBoxName);
             this.panel1.Controls.Add(this.TextBoxNim);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label6);
             this.panel1.Location = new System.Drawing.Point(58, 180);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1007, 152);
             this.panel1.TabIndex = 18;
             // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(799, 57);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(173, 34);
-            this.textBox4.TabIndex = 25;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(799, 19);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(173, 34);
-            this.textBox3.TabIndex = 24;
-            // 
             // TextBoxName
             // 
-            this.TextBoxName.Location = new System.Drawing.Point(117, 57);
+            this.TextBoxName.Location = new System.Drawing.Point(574, 19);
             this.TextBoxName.Multiline = true;
             this.TextBoxName.Name = "TextBoxName";
             this.TextBoxName.ReadOnly = true;
@@ -368,23 +322,23 @@ namespace Visual_Perpus
             this.label10.TabIndex = 11;
             this.label10.Text = "Maksimal Peminjaman Buku :";
             // 
-            // textBox5
+            // TextBoxIdBook
             // 
-            this.textBox5.Location = new System.Drawing.Point(175, 428);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(173, 34);
-            this.textBox5.TabIndex = 26;
+            this.TextBoxIdBook.Location = new System.Drawing.Point(175, 428);
+            this.TextBoxIdBook.Multiline = true;
+            this.TextBoxIdBook.Name = "TextBoxIdBook";
+            this.TextBoxIdBook.ReadOnly = true;
+            this.TextBoxIdBook.Size = new System.Drawing.Size(173, 34);
+            this.TextBoxIdBook.TabIndex = 26;
             // 
-            // textBox6
+            // TextBoxTitleBook
             // 
-            this.textBox6.Location = new System.Drawing.Point(175, 468);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(173, 34);
-            this.textBox6.TabIndex = 27;
+            this.TextBoxTitleBook.Location = new System.Drawing.Point(175, 468);
+            this.TextBoxTitleBook.Multiline = true;
+            this.TextBoxTitleBook.Name = "TextBoxTitleBook";
+            this.TextBoxTitleBook.ReadOnly = true;
+            this.TextBoxTitleBook.Size = new System.Drawing.Size(173, 34);
+            this.TextBoxTitleBook.TabIndex = 27;
             // 
             // textBox7
             // 
@@ -406,30 +360,31 @@ namespace Visual_Perpus
             this.textBox8.TabIndex = 29;
             this.textBox8.Text = "7 Hari";
             // 
-            // bunifuThinButton22
+            // BtnSearchBook
             // 
-            this.bunifuThinButton22.ActiveBorderThickness = 1;
-            this.bunifuThinButton22.ActiveCornerRadius = 20;
-            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton22.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "CARI";
-            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton22.ForeColor = System.Drawing.Color.Black;
-            this.bunifuThinButton22.IdleBorderThickness = 1;
-            this.bunifuThinButton22.IdleCornerRadius = 20;
-            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(542, 350);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(166, 41);
-            this.bunifuThinButton22.TabIndex = 31;
-            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnSearchBook.ActiveBorderThickness = 1;
+            this.BtnSearchBook.ActiveCornerRadius = 20;
+            this.BtnSearchBook.ActiveFillColor = System.Drawing.Color.DarkTurquoise;
+            this.BtnSearchBook.ActiveForecolor = System.Drawing.Color.White;
+            this.BtnSearchBook.ActiveLineColor = System.Drawing.Color.DarkTurquoise;
+            this.BtnSearchBook.BackColor = System.Drawing.Color.White;
+            this.BtnSearchBook.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnSearchBook.BackgroundImage")));
+            this.BtnSearchBook.ButtonText = "CARI";
+            this.BtnSearchBook.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSearchBook.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSearchBook.ForeColor = System.Drawing.Color.Black;
+            this.BtnSearchBook.IdleBorderThickness = 1;
+            this.BtnSearchBook.IdleCornerRadius = 20;
+            this.BtnSearchBook.IdleFillColor = System.Drawing.Color.White;
+            this.BtnSearchBook.IdleForecolor = System.Drawing.Color.DarkTurquoise;
+            this.BtnSearchBook.IdleLineColor = System.Drawing.Color.DarkTurquoise;
+            this.BtnSearchBook.Location = new System.Drawing.Point(542, 346);
+            this.BtnSearchBook.Margin = new System.Windows.Forms.Padding(5);
+            this.BtnSearchBook.Name = "BtnSearchBook";
+            this.BtnSearchBook.Size = new System.Drawing.Size(166, 41);
+            this.BtnSearchBook.TabIndex = 31;
+            this.BtnSearchBook.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnSearchBook.Click += new System.EventHandler(this.BtnSearchBook_Click);
             // 
             // Peminjaman
             // 
@@ -437,11 +392,11 @@ namespace Visual_Perpus
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1130, 677);
-            this.Controls.Add(this.bunifuThinButton22);
+            this.Controls.Add(this.BtnSearchBook);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.TextBoxTitleBook);
+            this.Controls.Add(this.TextBoxIdBook);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.TxtBoxErrorBook);
             this.Controls.Add(this.label8);
@@ -477,8 +432,6 @@ namespace Visual_Perpus
         private Bunifu.Framework.UI.BunifuThinButton2 BtnSearchPeminjaman;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
         private Bunifu.Framework.UI.BunifuThinButton2 BtnPinjamBuku;
         private Bunifu.Framework.UI.BunifuMaterialTextbox TxtBoxIdBookPeminjaman;
@@ -490,14 +443,12 @@ namespace Visual_Perpus
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox TextBoxName;
         private System.Windows.Forms.TextBox TextBoxNim;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox TextBoxIdBook;
+        private System.Windows.Forms.TextBox TextBoxTitleBook;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
+        private Bunifu.Framework.UI.BunifuThinButton2 BtnSearchBook;
     }
 }
