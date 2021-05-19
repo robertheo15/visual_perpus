@@ -59,6 +59,26 @@ namespace Visual_Perpus
         {
             
         }
-    
+
+        private void updateView()
+        {
+            MySqlConnection con = new MySqlConnection(connStr);
+            con.Open();
+            MySqlCommand command = con.CreateCommand();
+            command.CommandText = "SELECT * FROM `order_detail` ";
+            MySqlDataReader reader = command.ExecuteReader();
+            DataGridMember.Rows.Clear();
+            DataGridMember.Columns.Clear();
+            DataGridMember.Columns.Add("Col1", "Username");
+            DataGridMember.Columns.Add("Col2", "NIM");
+            DataGridMember.Columns.Add("Col3", "FirstName");
+            DataGridMember.Columns.Add("Col4", "LastName");
+            while (reader.Read())
+            {
+                DataGridMember.Rows.Add(reader.GetString(3), reader.GetString(2), reader.GetString(5), reader.GetString(6));
+            }
+            con.Close();
+        }
+
     }
 }

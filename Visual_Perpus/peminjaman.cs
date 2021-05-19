@@ -81,9 +81,9 @@ namespace Visual_Perpus
 
                 DateTime localdate = DateTime.Now;
                 Database db = new Database();
-                MySqlCommand cmd = new MySqlCommand("INSERT INTO `order_detail` (`id_book`, `id_user`,`date_from`, `date_return`,`date_to`,`status`)VALUES (@idBook, @idUser,  @dateFrom ,@dateReturn, @dateTo, @status)", db.GetConnection());
+                MySqlCommand cmd = new MySqlCommand("INSERT INTO `order_detail` (`id_book`, `nim`,`date_from`, `date_return`,`date_to`,`status`)VALUES (@idBook, @nim,  @dateFrom ,@dateReturn, @dateTo, @status)", db.GetConnection());
                 cmd.Parameters.Add("@idBook", MySqlDbType.Int32).Value = TxtBoxIdBookPeminjaman.Text;
-                cmd.Parameters.Add("@idUser", MySqlDbType.Int32).Value = TxtBoxNimPeminjaman.Text;
+                cmd.Parameters.Add("@nim", MySqlDbType.Int32).Value = TxtBoxNimPeminjaman.Text;
                 cmd.Parameters.Add("@dateFrom", MySqlDbType.Timestamp).Value = localdate;
                 cmd.Parameters.Add("@dateReturn", MySqlDbType.VarChar).Value = "";
                 cmd.Parameters.Add("@dateTo", MySqlDbType.Timestamp).Value = localdate.AddDays(7);

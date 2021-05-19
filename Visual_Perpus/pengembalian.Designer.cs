@@ -35,7 +35,6 @@ namespace Visual_Perpus
             this.BtnPengembalian = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label13 = new System.Windows.Forms.Label();
-            this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.BtnSearchPengembalian = new Bunifu.Framework.UI.BunifuThinButton2();
             this.TxtBoxNim = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label2 = new System.Windows.Forms.Label();
@@ -53,8 +52,15 @@ namespace Visual_Perpus
             this.label15 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.LabelError = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
+            this.DataGridMember = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.title = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateFrom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateTo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateReturn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridMember)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnPengembalian
@@ -110,37 +116,6 @@ namespace Visual_Perpus
             this.label13.Size = new System.Drawing.Size(187, 37);
             this.label13.TabIndex = 24;
             this.label13.Text = "KODE BUKU :";
-            // 
-            // bunifuCustomDataGrid1
-            // 
-            this.bunifuCustomDataGrid1.AllowUserToAddRows = false;
-            this.bunifuCustomDataGrid1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bunifuCustomDataGrid1.DoubleBuffered = true;
-            this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(54, 338);
-            this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
-            this.bunifuCustomDataGrid1.ReadOnly = true;
-            this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bunifuCustomDataGrid1.RowHeadersWidth = 51;
-            this.bunifuCustomDataGrid1.RowTemplate.Height = 24;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(1007, 158);
-            this.bunifuCustomDataGrid1.TabIndex = 23;
             // 
             // BtnSearchPengembalian
             // 
@@ -341,19 +316,105 @@ namespace Visual_Perpus
             this.LabelError.TabIndex = 14;
             this.LabelError.Text = "--";
             // 
+            // DataGridMember
+            // 
+            this.DataGridMember.AllowUserToAddRows = false;
+            this.DataGridMember.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DataGridMember.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.DataGridMember.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.DataGridMember.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DataGridMember.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridMember.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DataGridMember.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridMember.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.name,
+            this.title,
+            this.dateFrom,
+            this.dateTo,
+            this.dateReturn,
+            this.Status});
+            this.DataGridMember.DoubleBuffered = true;
+            this.DataGridMember.EnableHeadersVisualStyles = false;
+            this.DataGridMember.HeaderBgColor = System.Drawing.Color.Aqua;
+            this.DataGridMember.HeaderForeColor = System.Drawing.Color.Black;
+            this.DataGridMember.Location = new System.Drawing.Point(57, 354);
+            this.DataGridMember.Name = "DataGridMember";
+            this.DataGridMember.ReadOnly = true;
+            this.DataGridMember.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DataGridMember.RowHeadersWidth = 51;
+            this.DataGridMember.RowTemplate.Height = 24;
+            this.DataGridMember.Size = new System.Drawing.Size(1004, 157);
+            this.DataGridMember.TabIndex = 29;
+            // 
+            // name
+            // 
+            this.name.HeaderText = "Nama";
+            this.name.MinimumWidth = 6;
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
+            this.name.Width = 125;
+            // 
+            // title
+            // 
+            this.title.HeaderText = "Judul Buku";
+            this.title.MinimumWidth = 6;
+            this.title.Name = "title";
+            this.title.ReadOnly = true;
+            this.title.Width = 125;
+            // 
+            // dateFrom
+            // 
+            this.dateFrom.HeaderText = "Date From";
+            this.dateFrom.MinimumWidth = 6;
+            this.dateFrom.Name = "dateFrom";
+            this.dateFrom.ReadOnly = true;
+            this.dateFrom.Width = 125;
+            // 
+            // dateTo
+            // 
+            this.dateTo.HeaderText = "Date To";
+            this.dateTo.MinimumWidth = 6;
+            this.dateTo.Name = "dateTo";
+            this.dateTo.ReadOnly = true;
+            this.dateTo.Width = 125;
+            // 
+            // dateReturn
+            // 
+            this.dateReturn.HeaderText = "Date Return";
+            this.dateReturn.MinimumWidth = 6;
+            this.dateReturn.Name = "dateReturn";
+            this.dateReturn.ReadOnly = true;
+            this.dateReturn.Width = 125;
+            // 
+            // Status
+            // 
+            this.Status.HeaderText = "Status";
+            this.Status.MinimumWidth = 6;
+            this.Status.Name = "Status";
+            this.Status.ReadOnly = true;
+            this.Status.Width = 125;
+            // 
             // Pengembalian
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1175, 682);
+            this.Controls.Add(this.DataGridMember);
             this.Controls.Add(this.LabelError);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.BtnPengembalian);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.bunifuMaterialTextbox2);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.bunifuCustomDataGrid1);
             this.Controls.Add(this.BtnSearchPengembalian);
             this.Controls.Add(this.TxtBoxNim);
             this.Controls.Add(this.label2);
@@ -363,9 +424,9 @@ namespace Visual_Perpus
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Pengembalian";
             this.Text = "pengembalian";
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridMember)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -376,7 +437,6 @@ namespace Visual_Perpus
         private Bunifu.Framework.UI.BunifuThinButton2 BtnPengembalian;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
         private System.Windows.Forms.Label label13;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
         private Bunifu.Framework.UI.BunifuThinButton2 BtnSearchPengembalian;
         private Bunifu.Framework.UI.BunifuMaterialTextbox TxtBoxNim;
         private System.Windows.Forms.Label label2;
@@ -394,5 +454,12 @@ namespace Visual_Perpus
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label LabelError;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid DataGridMember;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn title;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateFrom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateTo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateReturn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
     }
 }
