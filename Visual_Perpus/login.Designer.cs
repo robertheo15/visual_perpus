@@ -80,7 +80,6 @@ namespace Visual_Perpus
             this.TextBoxUsername.Name = "TextBoxUsername";
             this.TextBoxUsername.Size = new System.Drawing.Size(370, 44);
             this.TextBoxUsername.TabIndex = 5;
-            this.TextBoxUsername.Text = "Insert username here";
             this.TextBoxUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label1
@@ -109,7 +108,6 @@ namespace Visual_Perpus
             this.TextBoxPassword.Name = "TextBoxPassword";
             this.TextBoxPassword.Size = new System.Drawing.Size(370, 44);
             this.TextBoxPassword.TabIndex = 8;
-            this.TextBoxPassword.Text = "Insert password here";
             this.TextBoxPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.TextBoxPassword.OnValueChanged += new System.EventHandler(this.TextBoxPassword_OnValueChanged);
             // 

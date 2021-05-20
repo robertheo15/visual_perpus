@@ -53,6 +53,7 @@ namespace Visual_Perpus
             this.panel2 = new System.Windows.Forms.Panel();
             this.LabelError = new System.Windows.Forms.Label();
             this.DataGridMember = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.No_Order = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.title = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateFrom = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -335,6 +336,7 @@ namespace Visual_Perpus
             this.DataGridMember.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DataGridMember.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridMember.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.No_Order,
             this.name,
             this.title,
             this.dateFrom,
@@ -353,6 +355,14 @@ namespace Visual_Perpus
             this.DataGridMember.RowTemplate.Height = 24;
             this.DataGridMember.Size = new System.Drawing.Size(1004, 157);
             this.DataGridMember.TabIndex = 29;
+            // 
+            // No_Order
+            // 
+            this.No_Order.HeaderText = "No Order";
+            this.No_Order.MinimumWidth = 6;
+            this.No_Order.Name = "No_Order";
+            this.No_Order.ReadOnly = true;
+            this.No_Order.Width = 125;
             // 
             // name
             // 
@@ -455,6 +465,7 @@ namespace Visual_Perpus
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label LabelError;
         private Bunifu.Framework.UI.BunifuCustomDataGrid DataGridMember;
+        private System.Windows.Forms.DataGridViewTextBoxColumn No_Order;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
         private System.Windows.Forms.DataGridViewTextBoxColumn title;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateFrom;
