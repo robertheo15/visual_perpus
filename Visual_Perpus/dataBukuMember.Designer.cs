@@ -30,11 +30,11 @@ namespace Visual_Perpus
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Databukumember));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.BtnSearchBook = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.TextboxIdBook = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.DataGridBookMember = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.BookID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Title = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,6 +43,7 @@ namespace Visual_Perpus
             this.Qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridBookMember)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,68 +56,68 @@ namespace Visual_Perpus
             this.label2.TabIndex = 2;
             this.label2.Text = "DAFTAR BUKU";
             // 
-            // bunifuThinButton21
+            // BtnSearchBook
             // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "CARI";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.Black;
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(447, 134);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(202, 41);
-            this.bunifuThinButton21.TabIndex = 5;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnSearchBook.ActiveBorderThickness = 1;
+            this.BtnSearchBook.ActiveCornerRadius = 20;
+            this.BtnSearchBook.ActiveFillColor = System.Drawing.Color.DarkTurquoise;
+            this.BtnSearchBook.ActiveForecolor = System.Drawing.Color.White;
+            this.BtnSearchBook.ActiveLineColor = System.Drawing.Color.DarkTurquoise;
+            this.BtnSearchBook.BackColor = System.Drawing.Color.White;
+            this.BtnSearchBook.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnSearchBook.BackgroundImage")));
+            this.BtnSearchBook.ButtonText = "CARI";
+            this.BtnSearchBook.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSearchBook.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSearchBook.ForeColor = System.Drawing.Color.Black;
+            this.BtnSearchBook.IdleBorderThickness = 1;
+            this.BtnSearchBook.IdleCornerRadius = 20;
+            this.BtnSearchBook.IdleFillColor = System.Drawing.Color.White;
+            this.BtnSearchBook.IdleForecolor = System.Drawing.Color.DarkTurquoise;
+            this.BtnSearchBook.IdleLineColor = System.Drawing.Color.DarkTurquoise;
+            this.BtnSearchBook.Location = new System.Drawing.Point(626, 134);
+            this.BtnSearchBook.Margin = new System.Windows.Forms.Padding(5);
+            this.BtnSearchBook.Name = "BtnSearchBook";
+            this.BtnSearchBook.Size = new System.Drawing.Size(202, 41);
+            this.BtnSearchBook.TabIndex = 5;
+            this.BtnSearchBook.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnSearchBook.Click += new System.EventHandler(this.BtnSearchBook_Click);
             // 
-            // bunifuMaterialTextbox1
+            // TextboxIdBook
             // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(68, 122);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(370, 44);
-            this.bunifuMaterialTextbox1.TabIndex = 4;
-            this.bunifuMaterialTextbox1.Text = "Search Book";
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TextboxIdBook.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextboxIdBook.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.TextboxIdBook.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TextboxIdBook.HintForeColor = System.Drawing.Color.Empty;
+            this.TextboxIdBook.HintText = "";
+            this.TextboxIdBook.isPassword = false;
+            this.TextboxIdBook.LineFocusedColor = System.Drawing.Color.DarkTurquoise;
+            this.TextboxIdBook.LineIdleColor = System.Drawing.Color.Gray;
+            this.TextboxIdBook.LineMouseHoverColor = System.Drawing.Color.DarkTurquoise;
+            this.TextboxIdBook.LineThickness = 3;
+            this.TextboxIdBook.Location = new System.Drawing.Point(237, 122);
+            this.TextboxIdBook.Margin = new System.Windows.Forms.Padding(4);
+            this.TextboxIdBook.Name = "TextboxIdBook";
+            this.TextboxIdBook.Size = new System.Drawing.Size(370, 44);
+            this.TextboxIdBook.TabIndex = 4;
+            this.TextboxIdBook.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // DataGridBookMember
             // 
             this.DataGridBookMember.AllowUserToAddRows = false;
             this.DataGridBookMember.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.DataGridBookMember.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DataGridBookMember.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.DataGridBookMember.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.DataGridBookMember.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGridBookMember.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridBookMember.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridBookMember.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.DataGridBookMember.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridBookMember.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.BookID,
@@ -196,15 +197,26 @@ namespace Visual_Perpus
             this.Type.ReadOnly = true;
             this.Type.Width = 125;
             // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label1.Location = new System.Drawing.Point(97, 134);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(143, 37);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "ID Book :";
+            // 
             // Databukumember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1156, 712);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.DataGridBookMember);
-            this.Controls.Add(this.bunifuThinButton21);
-            this.Controls.Add(this.bunifuMaterialTextbox1);
+            this.Controls.Add(this.BtnSearchBook);
+            this.Controls.Add(this.TextboxIdBook);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Databukumember";
@@ -217,8 +229,8 @@ namespace Visual_Perpus
         #endregion
 
         private System.Windows.Forms.Label label2;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
+        private Bunifu.Framework.UI.BunifuThinButton2 BtnSearchBook;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox TextboxIdBook;
         private Bunifu.Framework.UI.BunifuCustomDataGrid DataGridBookMember;
         private System.Windows.Forms.DataGridViewTextBoxColumn BookID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Title;
@@ -227,5 +239,6 @@ namespace Visual_Perpus
         private System.Windows.Forms.DataGridViewTextBoxColumn Qty;
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
         private System.Windows.Forms.DataGridViewTextBoxColumn Type;
+        private System.Windows.Forms.Label label1;
     }
 }

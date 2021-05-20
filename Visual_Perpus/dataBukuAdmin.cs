@@ -86,12 +86,11 @@ namespace Visual_Perpus
             con.Open();
             MySqlCommand command = con.CreateCommand();
             command.Parameters.AddWithValue("@search", bunifuMaterialTextbox1.Text);
-            command.CommandText = "Select * FROM `books` WHERE  id_book = @search OR title_book  = @search ";
+            command.CommandText = "Select * FROM `books` WHERE  id_book = @search";
             MySqlDataReader reader = command.ExecuteReader();
 
             if (reader.Read())
             {
-
                 DataGridBook.Rows.Clear();
                 DataGridBook.Columns.Clear();
                 DataGridBook.Refresh();

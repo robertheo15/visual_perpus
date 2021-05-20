@@ -29,65 +29,27 @@ namespace Visual_Perpus
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Report));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label2 = new System.Windows.Forms.Label();
-            this.RegisterDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NIM = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DataReport = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.col1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DataGridMember = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridMember)).BeginInit();
+            this.NIM = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RegisterDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DateFrom = new System.Windows.Forms.DateTimePicker();
+            this.DateTo = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.BtnSearchLaporan = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.LabelError = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.DataReport)).BeginInit();
             this.SuspendLayout();
-            // 
-            // bunifuThinButton21
-            // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "CARI";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.Black;
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(433, 119);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(202, 41);
-            this.bunifuThinButton21.TabIndex = 30;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // bunifuMaterialTextbox1
-            // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(54, 107);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(370, 44);
-            this.bunifuMaterialTextbox1.TabIndex = 29;
-            this.bunifuMaterialTextbox1.Text = "Search Date";
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label2
             // 
@@ -98,74 +60,179 @@ namespace Visual_Perpus
             this.label2.TabIndex = 28;
             this.label2.Text = "LAPORAN";
             // 
-            // RegisterDate
+            // DataReport
             // 
-            this.RegisterDate.HeaderText = "Register Date";
-            this.RegisterDate.MinimumWidth = 6;
-            this.RegisterDate.Name = "RegisterDate";
-            this.RegisterDate.Width = 125;
-            // 
-            // LastName
-            // 
-            this.LastName.HeaderText = "Last Name";
-            this.LastName.MinimumWidth = 6;
-            this.LastName.Name = "LastName";
-            this.LastName.Width = 125;
-            // 
-            // FirstName
-            // 
-            this.FirstName.HeaderText = "First Name";
-            this.FirstName.MinimumWidth = 6;
-            this.FirstName.Name = "FirstName";
-            this.FirstName.Width = 125;
-            // 
-            // NIM
-            // 
-            this.NIM.HeaderText = "NIM";
-            this.NIM.MinimumWidth = 6;
-            this.NIM.Name = "NIM";
-            this.NIM.Width = 125;
-            // 
-            // col1
-            // 
-            this.col1.HeaderText = "Username";
-            this.col1.MinimumWidth = 6;
-            this.col1.Name = "col1";
-            this.col1.Width = 125;
-            // 
-            // DataGridMember
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.DataGridMember.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.DataGridMember.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.DataGridMember.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DataGridMember.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridMember.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.DataGridMember.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridMember.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DataReport.AllowUserToAddRows = false;
+            this.DataReport.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DataReport.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.DataReport.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.DataReport.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DataReport.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataReport.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.DataReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataReport.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.col1,
             this.NIM,
             this.FirstName,
             this.LastName,
-            this.RegisterDate});
-            this.DataGridMember.DoubleBuffered = true;
-            this.DataGridMember.EnableHeadersVisualStyles = false;
-            this.DataGridMember.HeaderBgColor = System.Drawing.Color.Aqua;
-            this.DataGridMember.HeaderForeColor = System.Drawing.Color.Black;
-            this.DataGridMember.Location = new System.Drawing.Point(56, 197);
-            this.DataGridMember.Name = "DataGridMember";
-            this.DataGridMember.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.DataGridMember.RowHeadersWidth = 51;
-            this.DataGridMember.RowTemplate.Height = 24;
-            this.DataGridMember.Size = new System.Drawing.Size(944, 452);
-            this.DataGridMember.TabIndex = 32;
+            this.RegisterDate,
+            this.Column1,
+            this.Column2,
+            this.Column3});
+            this.DataReport.DoubleBuffered = true;
+            this.DataReport.EnableHeadersVisualStyles = false;
+            this.DataReport.HeaderBgColor = System.Drawing.Color.Aqua;
+            this.DataReport.HeaderForeColor = System.Drawing.Color.Black;
+            this.DataReport.Location = new System.Drawing.Point(54, 178);
+            this.DataReport.Name = "DataReport";
+            this.DataReport.ReadOnly = true;
+            this.DataReport.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DataReport.RowHeadersWidth = 51;
+            this.DataReport.RowTemplate.Height = 24;
+            this.DataReport.Size = new System.Drawing.Size(962, 454);
+            this.DataReport.TabIndex = 31;
+            // 
+            // col1
+            // 
+            this.col1.HeaderText = "No Order";
+            this.col1.MinimumWidth = 6;
+            this.col1.Name = "col1";
+            this.col1.ReadOnly = true;
+            this.col1.Width = 125;
+            // 
+            // NIM
+            // 
+            this.NIM.HeaderText = "First Name";
+            this.NIM.MinimumWidth = 6;
+            this.NIM.Name = "NIM";
+            this.NIM.ReadOnly = true;
+            this.NIM.Width = 125;
+            // 
+            // FirstName
+            // 
+            this.FirstName.HeaderText = "Last Name";
+            this.FirstName.MinimumWidth = 6;
+            this.FirstName.Name = "FirstName";
+            this.FirstName.ReadOnly = true;
+            this.FirstName.Width = 125;
+            // 
+            // LastName
+            // 
+            this.LastName.HeaderText = "Title Book";
+            this.LastName.MinimumWidth = 6;
+            this.LastName.Name = "LastName";
+            this.LastName.ReadOnly = true;
+            this.LastName.Width = 125;
+            // 
+            // RegisterDate
+            // 
+            this.RegisterDate.HeaderText = "Date From";
+            this.RegisterDate.MinimumWidth = 6;
+            this.RegisterDate.Name = "RegisterDate";
+            this.RegisterDate.ReadOnly = true;
+            this.RegisterDate.Width = 125;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Date To";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 125;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Date Return";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 125;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Status";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 125;
+            // 
+            // DateFrom
+            // 
+            this.DateFrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DateFrom.Location = new System.Drawing.Point(155, 129);
+            this.DateFrom.Name = "DateFrom";
+            this.DateFrom.Size = new System.Drawing.Size(200, 22);
+            this.DateFrom.TabIndex = 32;
+            // 
+            // DateTo
+            // 
+            this.DateTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DateTo.Location = new System.Drawing.Point(551, 129);
+            this.DateTo.Name = "DateTo";
+            this.DateTo.Size = new System.Drawing.Size(200, 22);
+            this.DateTo.TabIndex = 33;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label1.Location = new System.Drawing.Point(51, 123);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(85, 37);
+            this.label1.TabIndex = 34;
+            this.label1.Text = "From";
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label3.Location = new System.Drawing.Point(459, 123);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(85, 37);
+            this.label3.TabIndex = 35;
+            this.label3.Text = "To";
+            // 
+            // BtnSearchLaporan
+            // 
+            this.BtnSearchLaporan.ActiveBorderThickness = 1;
+            this.BtnSearchLaporan.ActiveCornerRadius = 20;
+            this.BtnSearchLaporan.ActiveFillColor = System.Drawing.Color.DarkTurquoise;
+            this.BtnSearchLaporan.ActiveForecolor = System.Drawing.Color.White;
+            this.BtnSearchLaporan.ActiveLineColor = System.Drawing.Color.DarkTurquoise;
+            this.BtnSearchLaporan.BackColor = System.Drawing.Color.White;
+            this.BtnSearchLaporan.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnSearchLaporan.BackgroundImage")));
+            this.BtnSearchLaporan.ButtonText = "CARI";
+            this.BtnSearchLaporan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSearchLaporan.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSearchLaporan.ForeColor = System.Drawing.Color.Black;
+            this.BtnSearchLaporan.IdleBorderThickness = 1;
+            this.BtnSearchLaporan.IdleCornerRadius = 20;
+            this.BtnSearchLaporan.IdleFillColor = System.Drawing.Color.White;
+            this.BtnSearchLaporan.IdleForecolor = System.Drawing.Color.DarkTurquoise;
+            this.BtnSearchLaporan.IdleLineColor = System.Drawing.Color.DarkTurquoise;
+            this.BtnSearchLaporan.Location = new System.Drawing.Point(775, 119);
+            this.BtnSearchLaporan.Margin = new System.Windows.Forms.Padding(5);
+            this.BtnSearchLaporan.Name = "BtnSearchLaporan";
+            this.BtnSearchLaporan.Size = new System.Drawing.Size(202, 41);
+            this.BtnSearchLaporan.TabIndex = 36;
+            this.BtnSearchLaporan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnSearchLaporan.Click += new System.EventHandler(this.BtnSearchLaporan_Click);
+            // 
+            // LabelError
+            // 
+            this.LabelError.AutoSize = true;
+            this.LabelError.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.LabelError.Location = new System.Drawing.Point(620, 79);
+            this.LabelError.Name = "LabelError";
+            this.LabelError.Size = new System.Drawing.Size(29, 29);
+            this.LabelError.TabIndex = 37;
+            this.LabelError.Text = "--";
             // 
             // Report
             // 
@@ -173,27 +240,39 @@ namespace Visual_Perpus
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1318, 740);
-            this.Controls.Add(this.DataGridMember);
-            this.Controls.Add(this.bunifuThinButton21);
-            this.Controls.Add(this.bunifuMaterialTextbox1);
+            this.Controls.Add(this.LabelError);
+            this.Controls.Add(this.BtnSearchLaporan);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.DateTo);
+            this.Controls.Add(this.DateFrom);
+            this.Controls.Add(this.DataReport);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Report";
             this.Text = "report";
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridMember)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataReport)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RegisterDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn LastName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FirstName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NIM;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid DataReport;
         private System.Windows.Forms.DataGridViewTextBoxColumn col1;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid DataGridMember;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NIM;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FirstName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LastName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RegisterDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DateTimePicker DateFrom;
+        private System.Windows.Forms.DateTimePicker DateTo;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private Bunifu.Framework.UI.BunifuThinButton2 BtnSearchLaporan;
+        private System.Windows.Forms.Label LabelError;
     }
 }

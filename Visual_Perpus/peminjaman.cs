@@ -53,15 +53,12 @@ namespace Visual_Perpus
                     LabelNim.Text = reader.GetString(2);
                     LabelName.Text = reader.GetString(5) + ' '+ reader.GetString(5);
                 }
-
-
                 con1.Close();
             }
             else
             {
                 LabelErrorNim.Text = "Data tidak ada";
             }
-
             con.Close();
         }
         private void BtnPinjamBuku_Click(object sender, EventArgs e)
@@ -81,11 +78,10 @@ namespace Visual_Perpus
 
                 DateTime localdate = DateTime.Now;
                 Database db = new Database();
-                MySqlCommand cmd = new MySqlCommand("INSERT INTO `order_detail` (`id_book`, `nim`,`date_from`, `date_return`,`date_to`,`status`)VALUES (@idBook, @nim,  @dateFrom ,@dateReturn, @dateTo, @status)", db.GetConnection());
+                MySqlCommand cmd = new MySqlCommand("INSERT INTO `order_detail` (`id_book`, `nim`,`date_from`, `date_to`,`status`)VALUES (@idBook, @nim,  @dateFrom , @dateTo, @status)", db.GetConnection());
                 cmd.Parameters.Add("@idBook", MySqlDbType.Int32).Value = TxtBoxIdBookPeminjaman.Text;
                 cmd.Parameters.Add("@nim", MySqlDbType.Int32).Value = TxtBoxNimPeminjaman.Text;
                 cmd.Parameters.Add("@dateFrom", MySqlDbType.Timestamp).Value = localdate;
-                cmd.Parameters.Add("@dateReturn", MySqlDbType.VarChar).Value = "";
                 cmd.Parameters.Add("@dateTo", MySqlDbType.Timestamp).Value = localdate.AddDays(7);
                 cmd.Parameters.Add("@status", MySqlDbType.VarChar).Value = '0';
 
@@ -99,12 +95,8 @@ namespace Visual_Perpus
                 {
                     MessageBox.Show("ERROR");
                 }
-
-
                 db.CloseConnection();
-
             }
-
         }
 
         private void BtnSearchBook_Click(object sender, EventArgs e)
@@ -131,14 +123,12 @@ namespace Visual_Perpus
                     LabelIdBook.Text = reader.GetString(0);
                     LabelTitleBook.Text = reader.GetString(3);
                 }
-
                 con1.Close();
             }
             else
             {
                 LabelErrorBook.Text = "Data tidak ada";
             }
-
             con.Close();
         }
     }

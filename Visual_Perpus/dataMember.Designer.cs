@@ -35,14 +35,14 @@ namespace Visual_Perpus
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.BtnAddDataMember = new Bunifu.Framework.UI.BunifuThinButton2();
             this.DataGridMember = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.label2 = new System.Windows.Forms.Label();
             this.col1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NIM = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RegisterDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BtnSearchMember = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.TextBoxSearch = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridMember)).BeginInit();
             this.SuspendLayout();
             // 
@@ -131,60 +131,6 @@ namespace Visual_Perpus
             this.DataGridMember.Size = new System.Drawing.Size(944, 452);
             this.DataGridMember.TabIndex = 25;
             // 
-            // bunifuThinButton21
-            // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "CARI";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.Black;
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(417, 112);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(202, 41);
-            this.bunifuThinButton21.TabIndex = 24;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // bunifuMaterialTextbox1
-            // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(38, 100);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(370, 44);
-            this.bunifuMaterialTextbox1.TabIndex = 23;
-            this.bunifuMaterialTextbox1.Text = "Search Member";
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.label2.Location = new System.Drawing.Point(32, 34);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1029, 52);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "DATA MEMBER";
-            // 
             // col1
             // 
             this.col1.HeaderText = "Username";
@@ -220,6 +166,60 @@ namespace Visual_Perpus
             this.RegisterDate.Name = "RegisterDate";
             this.RegisterDate.Width = 125;
             // 
+            // BtnSearchMember
+            // 
+            this.BtnSearchMember.ActiveBorderThickness = 1;
+            this.BtnSearchMember.ActiveCornerRadius = 20;
+            this.BtnSearchMember.ActiveFillColor = System.Drawing.Color.DarkTurquoise;
+            this.BtnSearchMember.ActiveForecolor = System.Drawing.Color.White;
+            this.BtnSearchMember.ActiveLineColor = System.Drawing.Color.DarkTurquoise;
+            this.BtnSearchMember.BackColor = System.Drawing.Color.White;
+            this.BtnSearchMember.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnSearchMember.BackgroundImage")));
+            this.BtnSearchMember.ButtonText = "CARI";
+            this.BtnSearchMember.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSearchMember.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSearchMember.ForeColor = System.Drawing.Color.Black;
+            this.BtnSearchMember.IdleBorderThickness = 1;
+            this.BtnSearchMember.IdleCornerRadius = 20;
+            this.BtnSearchMember.IdleFillColor = System.Drawing.Color.White;
+            this.BtnSearchMember.IdleForecolor = System.Drawing.Color.DarkTurquoise;
+            this.BtnSearchMember.IdleLineColor = System.Drawing.Color.DarkTurquoise;
+            this.BtnSearchMember.Location = new System.Drawing.Point(417, 112);
+            this.BtnSearchMember.Margin = new System.Windows.Forms.Padding(5);
+            this.BtnSearchMember.Name = "BtnSearchMember";
+            this.BtnSearchMember.Size = new System.Drawing.Size(202, 41);
+            this.BtnSearchMember.TabIndex = 24;
+            this.BtnSearchMember.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnSearchMember.Click += new System.EventHandler(this.BtnSearchMember_Click);
+            // 
+            // TextBoxSearch
+            // 
+            this.TextBoxSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBoxSearch.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.TextBoxSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TextBoxSearch.HintForeColor = System.Drawing.Color.Empty;
+            this.TextBoxSearch.HintText = "";
+            this.TextBoxSearch.isPassword = false;
+            this.TextBoxSearch.LineFocusedColor = System.Drawing.Color.DarkTurquoise;
+            this.TextBoxSearch.LineIdleColor = System.Drawing.Color.Gray;
+            this.TextBoxSearch.LineMouseHoverColor = System.Drawing.Color.DarkTurquoise;
+            this.TextBoxSearch.LineThickness = 3;
+            this.TextBoxSearch.Location = new System.Drawing.Point(38, 100);
+            this.TextBoxSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.TextBoxSearch.Name = "TextBoxSearch";
+            this.TextBoxSearch.Size = new System.Drawing.Size(370, 44);
+            this.TextBoxSearch.TabIndex = 23;
+            this.TextBoxSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.label2.Location = new System.Drawing.Point(32, 34);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(1029, 52);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "DATA MEMBER";
+            // 
             // Datamember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -229,8 +229,8 @@ namespace Visual_Perpus
             this.Controls.Add(this.bunifuThinButton23);
             this.Controls.Add(this.BtnAddDataMember);
             this.Controls.Add(this.DataGridMember);
-            this.Controls.Add(this.bunifuThinButton21);
-            this.Controls.Add(this.bunifuMaterialTextbox1);
+            this.Controls.Add(this.BtnSearchMember);
+            this.Controls.Add(this.TextBoxSearch);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Datamember";
@@ -245,8 +245,8 @@ namespace Visual_Perpus
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
         private Bunifu.Framework.UI.BunifuThinButton2 BtnAddDataMember;
         private Bunifu.Framework.UI.BunifuCustomDataGrid DataGridMember;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
+        private Bunifu.Framework.UI.BunifuThinButton2 BtnSearchMember;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox TextBoxSearch;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridViewTextBoxColumn col1;
         private System.Windows.Forms.DataGridViewTextBoxColumn NIM;

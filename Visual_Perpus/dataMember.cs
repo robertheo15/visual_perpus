@@ -1,12 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Visual_Perpus
@@ -34,17 +27,39 @@ namespace Visual_Perpus
             MySqlCommand command = con.CreateCommand();
             command.CommandText = "SELECT * FROM `users` ";
             MySqlDataReader reader = command.ExecuteReader();
-            DataGridMember.Rows.Clear();
-            DataGridMember.Columns.Clear();
-            DataGridMember.Columns.Add("Col1", "Username");
-            DataGridMember.Columns.Add("Col2", "NIM");
-            DataGridMember.Columns.Add("Col3", "FirstName");
-            DataGridMember.Columns.Add("Col4", "LastName");
             while (reader.Read())
             {
                 DataGridMember.Rows.Add(reader.GetString(3), reader.GetString(2), reader.GetString(5), reader.GetString(6));
             }
             con.Close();
+        }
+
+        private void BtnSearchMember_Click(object sender, EventArgs e)
+        {
+            MySqlConnection con = new MySqlConnection(connStr);
+            con.Open();
+            MySqlCommand command = con.CreateCommand();
+            command.Parameters.AddWithValue("@search", TextBoxSearch.Text);
+            command.CommandText = "Select * FROM `users` WHERE  nim = @search";
+            MySqlDataReader reader = command.ExecuteReader();
+
+            if (reader.Read())
+            {
+                DataGridMember.Rows.Clear();
+                DataGridMember.Columns.Clear();
+                DataGridMember.Refresh();
+                DataGridMember.Columns.Add("Col1", "Username");
+                DataGridMember.Columns.Add("Col2", "NIM");
+                DataGridMember.Columns.Add("Col3", "FirstName");
+                DataGridMember.Columns.Add("Col4", "LastName");
+                DataGridMember.Columns.Add("Col4", "Register Date");
+                DataGridMember.Rows.Add(reader.GetString(3), reader.GetString(2),  reader.GetString(5), reader.GetString(6), reader.GetString(7));
+
+            }
+            else
+            {
+                MessageBox.Show("Data tidak ada");
+            }
         }
     }
 }
