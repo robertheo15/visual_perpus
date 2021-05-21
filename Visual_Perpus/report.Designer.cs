@@ -29,8 +29,8 @@ namespace Visual_Perpus
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Report));
             this.label2 = new System.Windows.Forms.Label();
             this.DataReport = new Bunifu.Framework.UI.BunifuCustomDataGrid();
@@ -42,12 +42,12 @@ namespace Visual_Perpus
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DateFrom = new System.Windows.Forms.DateTimePicker();
-            this.DateTo = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.BtnSearchLaporan = new Bunifu.Framework.UI.BunifuThinButton2();
             this.LabelError = new System.Windows.Forms.Label();
+            this.DateFrom = new System.Windows.Forms.DateTimePicker();
+            this.DateTo = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.DataReport)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,19 +64,19 @@ namespace Visual_Perpus
             // 
             this.DataReport.AllowUserToAddRows = false;
             this.DataReport.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.DataReport.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DataReport.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DataReport.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.DataReport.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataReport.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataReport.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataReport.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DataReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataReport.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.col1,
@@ -164,22 +164,6 @@ namespace Visual_Perpus
             this.Column3.ReadOnly = true;
             this.Column3.Width = 125;
             // 
-            // DateFrom
-            // 
-            this.DateFrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DateFrom.Location = new System.Drawing.Point(155, 129);
-            this.DateFrom.Name = "DateFrom";
-            this.DateFrom.Size = new System.Drawing.Size(200, 22);
-            this.DateFrom.TabIndex = 32;
-            // 
-            // DateTo
-            // 
-            this.DateTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DateTo.Location = new System.Drawing.Point(551, 129);
-            this.DateTo.Name = "DateTo";
-            this.DateTo.Size = new System.Drawing.Size(200, 22);
-            this.DateTo.TabIndex = 33;
-            // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
@@ -234,18 +218,38 @@ namespace Visual_Perpus
             this.LabelError.TabIndex = 37;
             this.LabelError.Text = "--";
             // 
+            // DateFrom
+            // 
+            this.DateFrom.CustomFormat = "yyyy-MM-dd";
+            this.DateFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DateFrom.Location = new System.Drawing.Point(170, 129);
+            this.DateFrom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DateFrom.Name = "DateFrom";
+            this.DateFrom.Size = new System.Drawing.Size(237, 22);
+            this.DateFrom.TabIndex = 352;
+            // 
+            // DateTo
+            // 
+            this.DateTo.CustomFormat = "yyyy-MM-dd";
+            this.DateTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DateTo.Location = new System.Drawing.Point(516, 129);
+            this.DateTo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DateTo.Name = "DateTo";
+            this.DateTo.Size = new System.Drawing.Size(237, 22);
+            this.DateTo.TabIndex = 353;
+            // 
             // Report
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1318, 740);
+            this.Controls.Add(this.DateTo);
+            this.Controls.Add(this.DateFrom);
             this.Controls.Add(this.LabelError);
             this.Controls.Add(this.BtnSearchLaporan);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.DateTo);
-            this.Controls.Add(this.DateFrom);
             this.Controls.Add(this.DataReport);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -268,11 +272,11 @@ namespace Visual_Perpus
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DateTimePicker DateFrom;
-        private System.Windows.Forms.DateTimePicker DateTo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private Bunifu.Framework.UI.BunifuThinButton2 BtnSearchLaporan;
         private System.Windows.Forms.Label LabelError;
+        private System.Windows.Forms.DateTimePicker DateFrom;
+        private System.Windows.Forms.DateTimePicker DateTo;
     }
 }

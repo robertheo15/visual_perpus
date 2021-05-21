@@ -21,37 +21,15 @@ namespace Visual_Perpus
 
         private void updateView()
         {
-            DateTime localdate = DateTime.Now;
-            MySqlConnection con = new MySqlConnection(connStr);
-            con.Open();
-            MySqlCommand command = con.CreateCommand();
-            command.Parameters.AddWithValue("@dateFrom", DateFrom.Value.ToString("yyyy-MM-dd"));
-            command.Parameters.AddWithValue("@dateTo", DateTo.Value.ToString("yyyy-MM-dd"));
-            /*MessageBox.Show(DateFrom.Value.ToString(), "ASD");
-*/
-            command.CommandText = "SELECT order_detail.id_order_detail,users.first_name,users.last_name, books.title_book, order_detail.date_from, order_detail.date_to , order_detail.date_return, order_detail.status FROM users JOIN order_detail ON order_detail.nim = users.nim JOIN books ON order_detail.id_book = books.id_book WHERE @dateFrom>=order_detail.date_from and @dateTo<=order_detail.date_to";
-            MySqlDataReader reader = command.ExecuteReader();
-           
-            while (reader.Read())
-            {
-                DataReport.Rows.Add(reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetString(3), reader.GetDateTime(4).ToString("yyyy-MM-dd"), reader.GetDateTime(5).ToString("yyyy-MM-dd"), reader.GetDateTime(6).ToString("yyyy-MM-dd"), reader.GetInt32(7));
-            }
-            con.Close();
-        }
-
-        private void BtnSearchLaporan_Click(object sender, EventArgs e)
-        {         
             MySqlConnection con = new MySqlConnection(connStr);
             con.Open();
             MySqlCommand command = con.CreateCommand();
             command.Parameters.AddWithValue("@dateFrom", DateFrom.Text);
             command.Parameters.AddWithValue("@dateTo", DateTo.Text);
-            /*MessageBox.Show(DateFrom.Value.ToString(), "ASD");
-*/
-            command.CommandText = "SELECT order_detail.id_order_detail,users.first_name,users.last_name, books.title_book, order_detail.date_from, order_detail.date_to , order_detail.date_return, order_detail.status FROM users JOIN order_detail ON order_detail.nim = users.nim JOIN books ON order_detail.id_book = books.id_book WHERE @dateFrom>=order_detail.date_from and @dateTo<=order_detail.date_to";
+            command.CommandText = "SELECT order_detail.id_order_detail,users.first_name,users.last_name, books.title_book, order_detail.date_from, order_detail.date_to , order_detail.date_return, order_detail.status FROM users JOIN order_detail ON order_detail.nim = users.nim JOIN books ON order_detail.id_book = books.id_book WHERE order_detail.date_from >= @dateFrom AND order_detail.date_to<= @dateTo";
             MySqlDataReader reader = command.ExecuteReader();
-            DataReport.Rows.Clear();
-            /*            DataReport.Columns.Clear();*/
+
+
             if (reader.Read())
             {
                 LabelError.Text = "Data ditemukan";
@@ -63,8 +41,36 @@ namespace Visual_Perpus
             else
             {
                 LabelError.Text = "Data tidak di temukan";
-            }          
+            }
             con.Close();
+        }
+
+        private void BtnSearchLaporan_Click(object sender, EventArgs e)
+        {
+            /*MySqlConnection con = new MySqlConnection(connStr);
+            con.Open();
+            MySqlCommand command = con.CreateCommand();
+            command.Parameters.AddWithValue("@dateFrom", DateFrom.Text);
+            command.Parameters.AddWithValue("@dateTo", DateTo.Text);
+            command.CommandText = "SELECT order_detail.id_order_detail,users.first_name,users.last_name, books.title_book, order_detail.date_from, order_detail.date_to , order_detail.date_return, order_detail.status FROM users JOIN order_detail ON order_detail.nim = users.nim JOIN books ON order_detail.id_book = books.id_book WHERE order_detail.date_from >= @dateFrom AND order_detail.date_to<= @dateTo";
+            MySqlDataReader reader = command.ExecuteReader();
+            
+           
+            if (reader.Read())
+            {
+                LabelError.Text = "Data ditemukan";
+                while (reader.Read())
+                {
+                    DataReport.Rows.Add(reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetString(3), reader.GetDateTime(4).ToString("yyyy-MM-dd"), reader.GetDateTime(5).ToString("yyyy-MM-dd"), reader.GetDateTime(6).ToString("yyyy-MM-dd"), reader.GetInt32(7));
+                }
+            }
+            else
+            {
+                LabelError.Text = "Data tidak di temukan";
+            }
+            con.Close();*/
+            DataReport.Rows.Clear();
+            updateView();
         }
     }
 }
