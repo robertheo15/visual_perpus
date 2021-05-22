@@ -46,6 +46,7 @@ namespace Visual_Perpus
             }
 
             con.Close();
+          
         }
 
         private void BtnPengembalian_Click(object sender, EventArgs e)
@@ -91,9 +92,8 @@ namespace Visual_Perpus
             MySqlConnection con = new MySqlConnection(connStr);
             con.Open();
             MySqlCommand command = con.CreateCommand();
-            command.Parameters.AddWithValue("@dateFrom", TxtBoxNim.Text);
-            command.Parameters.AddWithValue("@dateTo", TxtBoxNim.Text);
-            command.CommandText = "SELECT order_detail.id_order_detail,users.first_name,users.last_name, books.title_book, order_detail.date_from, order_detail.date_to , order_detail.date_return, order_detail.status FROM users JOIN order_detail ON order_detail.nim = users.nim JOIN books ON order_detail.id_book = books.id_book WHERE order_detail.date_from= CURDATE() and order_detail.date_to = CURDATE();";
+            command.Parameters.AddWithValue("@nim", TxtBoxNim.Text);
+            command.CommandText = "SELECT order_detail.id_order_detail,users.first_name,users.last_name, books.title_book, order_detail.date_from, order_detail.date_to , order_detail.date_return, order_detail.status FROM users JOIN order_detail ON order_detail.nim = users.nim JOIN books ON order_detail.id_book = books.id_book WHERE users.nim = @nim;";
             MySqlDataReader reader = command.ExecuteReader();
             DataGridMember.Rows.Clear();
             while (reader.Read())
