@@ -61,5 +61,30 @@ namespace Visual_Perpus
                 MessageBox.Show("Data tidak ada");
             }
         }
+
+        private void btnDeleteMember_Click(object sender, EventArgs e)
+        {
+            MySqlConnection con = new MySqlConnection(connStr);
+            con.Open();
+            MySqlCommand command = con.CreateCommand();
+            command.Parameters.AddWithValue("@nim_user", TextBoxSearch.Text);
+            command.CommandText = "Select * FROM `users` WHERE nim  = @nim_user ";
+            MySqlDataReader reader = command.ExecuteReader();
+            if (reader.Read())
+            {
+                MySqlConnection con1 = new MySqlConnection(connStr);
+                con1.Open();
+                MySqlCommand command1 = con1.CreateCommand();
+                command1.Parameters.AddWithValue("@nim_user",TextBoxSearch.Text);
+                command1.CommandText = "DELETE FROM `users` WHERE nim  = @nim_user ";
+                MySqlDataReader reader1 = command1.ExecuteReader();
+                MessageBox.Show("Data telah dihapus");
+                con1.Close();
+            }
+            else
+            {
+                MessageBox.Show("Data tidak ada");
+            }
+        }
     }
 }

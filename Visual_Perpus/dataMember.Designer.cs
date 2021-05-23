@@ -64,12 +64,13 @@ namespace Visual_Perpus
             this.bunifuThinButton23.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.Crimson;
             this.bunifuThinButton23.IdleLineColor = System.Drawing.Color.Crimson;
-            this.bunifuThinButton23.Location = new System.Drawing.Point(850, 112);
-            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton23.Location = new System.Drawing.Point(638, 91);
+            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuThinButton23.Name = "bunifuThinButton23";
-            this.bunifuThinButton23.Size = new System.Drawing.Size(132, 41);
+            this.bunifuThinButton23.Size = new System.Drawing.Size(99, 33);
             this.bunifuThinButton23.TabIndex = 27;
             this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton23.Click += new System.EventHandler(this.btnDeleteMember_Click);
             // 
             // BtnAddDataMember
             // 
@@ -89,10 +90,10 @@ namespace Visual_Perpus
             this.BtnAddDataMember.IdleFillColor = System.Drawing.Color.White;
             this.BtnAddDataMember.IdleForecolor = System.Drawing.Color.SpringGreen;
             this.BtnAddDataMember.IdleLineColor = System.Drawing.Color.SpringGreen;
-            this.BtnAddDataMember.Location = new System.Drawing.Point(699, 112);
-            this.BtnAddDataMember.Margin = new System.Windows.Forms.Padding(5);
+            this.BtnAddDataMember.Location = new System.Drawing.Point(524, 91);
+            this.BtnAddDataMember.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnAddDataMember.Name = "BtnAddDataMember";
-            this.BtnAddDataMember.Size = new System.Drawing.Size(132, 41);
+            this.BtnAddDataMember.Size = new System.Drawing.Size(99, 33);
             this.BtnAddDataMember.TabIndex = 26;
             this.BtnAddDataMember.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BtnAddDataMember.Click += new System.EventHandler(this.BtnAddDataMember_Click);
@@ -123,12 +124,13 @@ namespace Visual_Perpus
             this.DataGridMember.EnableHeadersVisualStyles = false;
             this.DataGridMember.HeaderBgColor = System.Drawing.Color.Aqua;
             this.DataGridMember.HeaderForeColor = System.Drawing.Color.Black;
-            this.DataGridMember.Location = new System.Drawing.Point(38, 172);
+            this.DataGridMember.Location = new System.Drawing.Point(28, 140);
+            this.DataGridMember.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DataGridMember.Name = "DataGridMember";
             this.DataGridMember.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DataGridMember.RowHeadersWidth = 51;
             this.DataGridMember.RowTemplate.Height = 24;
-            this.DataGridMember.Size = new System.Drawing.Size(944, 452);
+            this.DataGridMember.Size = new System.Drawing.Size(708, 367);
             this.DataGridMember.TabIndex = 25;
             // 
             // col1
@@ -184,10 +186,10 @@ namespace Visual_Perpus
             this.BtnSearchMember.IdleFillColor = System.Drawing.Color.White;
             this.BtnSearchMember.IdleForecolor = System.Drawing.Color.DarkTurquoise;
             this.BtnSearchMember.IdleLineColor = System.Drawing.Color.DarkTurquoise;
-            this.BtnSearchMember.Location = new System.Drawing.Point(417, 112);
-            this.BtnSearchMember.Margin = new System.Windows.Forms.Padding(5);
+            this.BtnSearchMember.Location = new System.Drawing.Point(313, 91);
+            this.BtnSearchMember.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnSearchMember.Name = "BtnSearchMember";
-            this.BtnSearchMember.Size = new System.Drawing.Size(202, 41);
+            this.BtnSearchMember.Size = new System.Drawing.Size(152, 33);
             this.BtnSearchMember.TabIndex = 24;
             this.BtnSearchMember.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BtnSearchMember.Click += new System.EventHandler(this.BtnSearchMember_Click);
@@ -204,28 +206,28 @@ namespace Visual_Perpus
             this.TextBoxSearch.LineIdleColor = System.Drawing.Color.Gray;
             this.TextBoxSearch.LineMouseHoverColor = System.Drawing.Color.DarkTurquoise;
             this.TextBoxSearch.LineThickness = 3;
-            this.TextBoxSearch.Location = new System.Drawing.Point(38, 100);
-            this.TextBoxSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.TextBoxSearch.Location = new System.Drawing.Point(28, 81);
             this.TextBoxSearch.Name = "TextBoxSearch";
-            this.TextBoxSearch.Size = new System.Drawing.Size(370, 44);
+            this.TextBoxSearch.Size = new System.Drawing.Size(278, 36);
             this.TextBoxSearch.TabIndex = 23;
             this.TextBoxSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.label2.Location = new System.Drawing.Point(32, 34);
+            this.label2.Location = new System.Drawing.Point(24, 28);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1029, 52);
+            this.label2.Size = new System.Drawing.Size(772, 42);
             this.label2.TabIndex = 22;
             this.label2.Text = "DATA MEMBER";
             // 
             // Datamember
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1194, 723);
+            this.ClientSize = new System.Drawing.Size(896, 587);
             this.Controls.Add(this.bunifuThinButton23);
             this.Controls.Add(this.BtnAddDataMember);
             this.Controls.Add(this.DataGridMember);
@@ -233,6 +235,7 @@ namespace Visual_Perpus
             this.Controls.Add(this.TextBoxSearch);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Datamember";
             this.Text = "dataMember";
             ((System.ComponentModel.ISupportInitialize)(this.DataGridMember)).EndInit();
