@@ -82,7 +82,7 @@ namespace Visual_Perpus
                     MessageBox.Show("Buku dikembalikan");
                 }
                 else { 
-                    MessageBox.Show("Error");
+                    MessageBox.Show("Data Tidak Ada");
                 }
             con.Close();
         }
