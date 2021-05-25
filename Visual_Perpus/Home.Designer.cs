@@ -42,11 +42,11 @@ namespace Visual_Perpus
             this.logo = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.bunifuFlatButton10 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton17 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton18 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.btnPeminjaman = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton10 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -434,16 +434,53 @@ namespace Visual_Perpus
             this.panel1.Controls.Add(this.bunifuCustomLabel1);
             this.panel1.Controls.Add(this.btnPeminjaman);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
+            this.panel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.panel1.GradientBottomRight = System.Drawing.Color.DimGray;
-            this.panel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(178)))), ((int)(((byte)(255)))));
-            this.panel1.GradientTopRight = System.Drawing.Color.Aqua;
+            this.panel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Quality = 10;
             this.panel1.Size = new System.Drawing.Size(335, 770);
             this.panel1.TabIndex = 22;
+            // 
+            // bunifuFlatButton10
+            // 
+            this.bunifuFlatButton10.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bunifuFlatButton10.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton10.BorderRadius = 0;
+            this.bunifuFlatButton10.ButtonText = "      ADMIN LOGIN";
+            this.bunifuFlatButton10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton10.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton10.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton10.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton10.Iconimage")));
+            this.bunifuFlatButton10.Iconimage_right = null;
+            this.bunifuFlatButton10.Iconimage_right_Selected = null;
+            this.bunifuFlatButton10.Iconimage_Selected = null;
+            this.bunifuFlatButton10.IconMarginLeft = 0;
+            this.bunifuFlatButton10.IconMarginRight = 0;
+            this.bunifuFlatButton10.IconRightVisible = true;
+            this.bunifuFlatButton10.IconRightZoom = 0D;
+            this.bunifuFlatButton10.IconVisible = true;
+            this.bunifuFlatButton10.IconZoom = 90D;
+            this.bunifuFlatButton10.IsTab = false;
+            this.bunifuFlatButton10.Location = new System.Drawing.Point(14, 323);
+            this.bunifuFlatButton10.Margin = new System.Windows.Forms.Padding(8, 4, 8, 4);
+            this.bunifuFlatButton10.Name = "bunifuFlatButton10";
+            this.bunifuFlatButton10.Normalcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton10.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton10.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton10.selected = false;
+            this.bunifuFlatButton10.Size = new System.Drawing.Size(434, 52);
+            this.bunifuFlatButton10.TabIndex = 10;
+            this.bunifuFlatButton10.Text = "      ADMIN LOGIN";
+            this.bunifuFlatButton10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton10.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton10.TextFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton10.Click += new System.EventHandler(this.bunifuFlatButton10_Click);
             // 
             // bunifuFlatButton17
             // 
@@ -570,43 +607,6 @@ namespace Visual_Perpus
             this.btnPeminjaman.TextFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPeminjaman.Click += new System.EventHandler(this.bunifuFlatButton19_Click);
             // 
-            // bunifuFlatButton10
-            // 
-            this.bunifuFlatButton10.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuFlatButton10.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton10.BorderRadius = 0;
-            this.bunifuFlatButton10.ButtonText = "      ADMIN LOGIN";
-            this.bunifuFlatButton10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton10.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton10.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton10.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton10.Iconimage")));
-            this.bunifuFlatButton10.Iconimage_right = null;
-            this.bunifuFlatButton10.Iconimage_right_Selected = null;
-            this.bunifuFlatButton10.Iconimage_Selected = null;
-            this.bunifuFlatButton10.IconMarginLeft = 0;
-            this.bunifuFlatButton10.IconMarginRight = 0;
-            this.bunifuFlatButton10.IconRightVisible = true;
-            this.bunifuFlatButton10.IconRightZoom = 0D;
-            this.bunifuFlatButton10.IconVisible = true;
-            this.bunifuFlatButton10.IconZoom = 90D;
-            this.bunifuFlatButton10.IsTab = false;
-            this.bunifuFlatButton10.Location = new System.Drawing.Point(14, 323);
-            this.bunifuFlatButton10.Margin = new System.Windows.Forms.Padding(8, 4, 8, 4);
-            this.bunifuFlatButton10.Name = "bunifuFlatButton10";
-            this.bunifuFlatButton10.Normalcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton10.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuFlatButton10.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton10.selected = false;
-            this.bunifuFlatButton10.Size = new System.Drawing.Size(434, 52);
-            this.bunifuFlatButton10.TabIndex = 10;
-            this.bunifuFlatButton10.Text = "      ADMIN LOGIN";
-            this.bunifuFlatButton10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton10.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton10.TextFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton10.Click += new System.EventHandler(this.bunifuFlatButton10_Click);
-            // 
             // panel2
             // 
             this.panel2.Location = new System.Drawing.Point(343, 13);
@@ -614,7 +614,7 @@ namespace Visual_Perpus
             this.panel2.Size = new System.Drawing.Size(1136, 682);
             this.panel2.TabIndex = 23;
             // 
-            // Form1
+            // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -633,7 +633,7 @@ namespace Visual_Perpus
             this.Controls.Add(this.logo);
             this.Controls.Add(this.bunifuFlatButton1);
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "Home";
             this.Text = "Mainform";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
