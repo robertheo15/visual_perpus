@@ -1,2 +1,3 @@
 # visual_perpus
-FINAL PROJECT VISUAL
+FINAL PROJECT Pemrograman Visual
+Kelompok 2
